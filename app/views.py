@@ -3,13 +3,13 @@ from app import app
 from .forms import Search
 from .rebound import ReBound
 
-@app.route('/')
 @app.route('/results')
 
 def results():
     return render_template("results.html",
                            title='Results',)
 
+@app.route('/')
 @app.route('/search', methods=['GET', 'POST'])
 def search():
     form = Search()
