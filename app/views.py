@@ -10,7 +10,7 @@ def results():
                            title='Results',)
 
 @app.route('/')
-@app.route('/search')#, methods=['GET', 'POST'])
+@app.route('/search', methods=['GET', 'POST'])
 def search():
     form = Search()
     rebound = ReBound()
