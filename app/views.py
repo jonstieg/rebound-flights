@@ -9,7 +9,7 @@ def results():
     return render_template("results.html",
                            title='Results',)
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 @app.route('/search', methods=['GET', 'POST'])
 def search():
     form = Search()
