@@ -58,12 +58,7 @@ class ReBound():
       data[x]=response.json()
 
     # write out results to file
-    print json.dumps(data, indent=1)
-    directory = os.path.abspath("/Users/jonstieg/Documents/ReBound/%s" % datetime.now().strftime('%Y-%m-%d'))
-    if not os.path.exists(directory):
-        os.makedirs(directory)
-    file1 = open(directory + '/' + arrivingAirport + '-' + datetime.now().strftime('%H-%M-%S') + ".txt","w")
-    file1.write(json.dumps(data, indent=1))
+    # print json.dumps(data, indent=1)
 
     flights = {}
     for x in range(1,weeksToSearch+1):
