@@ -7,8 +7,8 @@ from datetime import datetime, date, timedelta
 class ReBound():
   def reboundSearch(self, departingAirport, arrivingAirport, departingWeekday, returningWeekday):
     weekdays = {'mon': 0, 'tue': 1, 'wed': 2, 'thu': 3, 'fri': 4, 'sat': 5, 'sun': 6}
-    dayOfWeekToLeave = weekdays[departingWeekday]
-    dayOfWeekToReturn = weekdays[returningWeekday]
+    dayOfWeekToLeave = weekdays[departingWeekday.lower()]
+    dayOfWeekToReturn = weekdays[returningWeekday.lower()]
     weeksToSearch = 5
 
     api_key = "AIzaSyBZj9cQKwEbMVQoSAgbfP1nhntS7peg-Jw"
