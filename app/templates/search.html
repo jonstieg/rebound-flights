@@ -22,9 +22,21 @@
           {% for error in form.departingWeekday.errors %}
             <span style="color: red;">[{{ error }}]</span>
           {% endfor %}<br>
+          <br>
+          Please enter max number of stops on Departing Flight:<br>
+          {{ form.maxStopsDeparting(size=1) }}<br>
+          {% for error in form.maxStopsDeparting.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+          {% endfor %}<br>
           Please enter your Returning Day of Week:<br>
           {{ form.returningWeekday(size=3) }}<br>
           {% for error in form.returningWeekday.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+          {% endfor %}<br>
+          <br>
+          Please enter max number of stops on Returning Flight:<br>
+          {{ form.maxStopsReturning(size=1) }}<br>
+          {% for error in form.maxStopsReturning.errors %}
             <span style="color: red;">[{{ error }}]</span>
           {% endfor %}<br>
       </p>

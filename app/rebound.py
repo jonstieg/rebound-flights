@@ -5,7 +5,7 @@ import operator
 from datetime import datetime, date, timedelta
 
 class ReBound():
-  def reboundSearch(self, departingAirport, arrivingAirport, departingWeekday, returningWeekday):
+  def reboundSearch(self, departingAirport, arrivingAirport, departingWeekday, returningWeekday, maxStopsDeparting, maxStopsReturning):
     weekdays = {'mon': 0, 'tue': 1, 'wed': 2, 'thu': 3, 'fri': 4, 'sat': 5, 'sun': 6}
     dayOfWeekToLeave = weekdays[departingWeekday.lower()]
     dayOfWeekToReturn = weekdays[returningWeekday.lower()]
@@ -31,7 +31,7 @@ class ReBound():
               "origin": departingAirport,
               "destination": arrivingAirport,
               "date": (dateGo + timedelta(7 * x)).strftime('%Y-%m-%d'),
-              "maxStops": 1,
+              "maxStops": maxStopsDeparting,
               "permittedDepartureTime": {
                 "earliestTime": "17:00",
               }
@@ -40,7 +40,7 @@ class ReBound():
               "origin": arrivingAirport,
               "destination": departingAirport,
               "date": (dateReturn + timedelta(7 * x)).strftime('%Y-%m-%d'),
-              "maxStops": 0,
+              "maxStops": maxStopsReturning,
               "permittedDepartureTime": {
                 "earliestTime": "13:30",
                 "latestTime": "23:00"
