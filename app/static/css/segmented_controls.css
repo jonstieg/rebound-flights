@@ -38,3 +38,7 @@
     background: #eee;
     color: #333; 
 }
+
+input {
+  text-transform: uppercase;
+}
