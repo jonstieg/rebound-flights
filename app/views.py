@@ -1,4 +1,4 @@
-from flask import render_template, flash, redirect
+from flask import render_template, flash, redirect, request
 from app import app
 from .forms import Search
 from .rebound import ReBound
@@ -15,8 +15,7 @@ def search():
     form = Search()
     rebound = ReBound()
     if form.validate_on_submit():
-        # flash('Departing Airport ="%s"' % (form.departingAirport.data))
-        flights = rebound.reboundSearch(form.departingAirport.data, form.arrivingAirport.data, form.departingWeekday.data, form.returningWeekday.data, form.maxStopsDeparting.data, form.maxStopsReturning.data)
+        flights = rebound.reboundSearch(form.departingAirport.data, form.arrivingAirport.data, request.form['depDay'], request.form['retDay'], form.maxStopsDeparting.data, form.maxStopsReturning.data)
         flash(flights)
         return redirect('/results')
     return render_template('search.html', 

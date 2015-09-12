@@ -4,72 +4,100 @@
 {% block content %}
   <h1>Search</h1>
     <form action="" method="post" name="search">
+      {{ form.hidden_tag() }}
       <p>
-      <div class="container">   
-        <ul class="segmented-control">
-            <li class="segmented-control__item">
-                <input class="segmented-control__input" type="radio" value="0" name="option" id="DepMon0" >
-                <label class="segmented-control__label" for="DepMon0">Mon</label>
-            </li>
-            <li class="segmented-control__item">
-                <input class="segmented-control__input" type="radio" value="1" name="option" id="DepTue1" >
-                <label class="segmented-control__label" for="DepTue1">Tue</label>
-            </li>
-            <li class="segmented-control__item">
-                <input class="segmented-control__input" type="radio" value="2" name="option" id="DepWed2" >
-                <label class="segmented-control__label" for="DepWed2">Wed</label>
-            </li>
-            <li class="segmented-control__item">
-                <input class="segmented-control__input" type="radio" value="3" name="option" id="DepThu3" checked>
-                <label class="segmented-control__label" for="DepThu3">Thu</label>
-            </li>
-            <li class="segmented-control__item">
-                <input class="segmented-control__input" type="radio" value="4" name="option" id="DepFri4" >
-                <label class="segmented-control__label" for="DepFri4">Fri</label>
-            </li>
-            <li class="segmented-control__item">
-                <input class="segmented-control__input" type="radio" value="5" name="option" id="DepSat5" >
-                <label class="segmented-control__label" for="DepSat5">Sat</label>
-            </li>
-            <li class="segmented-control__item">
-                <input class="segmented-control__input" type="radio" value="6" name="option" id="DepSun6" >
-                <label class="segmented-control__label" for="DepSun6">Sun</label>
-            </li>
-        </ul>
-        <p>
-        Please enter your Departing Airport:<br>
+              <div class="container"> 
+        Please enter your Departing Airport:
         {{ form.departingAirport(size=3) }}<br>
         {% for error in form.departingAirport.errors %}
           <span style="color: red;">[{{ error }}]</span>
         {% endfor %}<br>
-        Please enter your Arriving Airport:<br>
+        Please enter your Arriving Airport:
         {{ form.arrivingAirport(size=3) }}<br>
         {% for error in form.arrivingAirport.errors %}
           <span style="color: red;">[{{ error }}]</span>
         {% endfor %}<br>
+      </div>
         <br>
-        Please enter your Departing Day of Week:<br>
-        {{ form.departingWeekday(size=3) }}<br>
-        {% for error in form.departingWeekday.errors %}
-          <span style="color: red;">[{{ error }}]</span>
-        {% endfor %}<br>
+        <div class="container"> 
+          <h2>Flight there:</h2>
+        <ul class="segmented-control">
+            <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="0" name="depDay" id="DepMon0" >
+                <label class="segmented-control__label" for="DepMon0">Mon</label>
+            </li>
+            <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="1" name="depDay" id="DepTue1" >
+                <label class="segmented-control__label" for="DepTue1">Tue</label>
+            </li>
+            <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="2" name="depDay" id="DepWed2" >
+                <label class="segmented-control__label" for="DepWed2">Wed</label>
+            </li>
+            <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="3" name="depDay" id="DepThu3" checked>
+                <label class="segmented-control__label" for="DepThu3">Thu</label>
+            </li>
+            <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="4" name="depDay" id="DepFri4" >
+                <label class="segmented-control__label" for="DepFri4">Fri</label>
+            </li>
+            <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="5" name="depDay" id="DepSat5" >
+                <label class="segmented-control__label" for="DepSat5">Sat</label>
+            </li>
+            <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="6" name="depDay" id="DepSun6" >
+                <label class="segmented-control__label" for="DepSun6">Sun</label>
+            </li>
+        </ul>
+        <p>
         <br>
         Please enter max number of stops on Departing Flight:<br>
         {{ form.maxStopsDeparting(size=1) }}<br>
         {% for error in form.maxStopsDeparting.errors %}
           <span style="color: red;">[{{ error }}]</span>
         {% endfor %}<br>
-        Please enter your Returning Day of Week:<br>
-        {{ form.returningWeekday(size=3) }}<br>
-        {% for error in form.returningWeekday.errors %}
-          <span style="color: red;">[{{ error }}]</span>
-        {% endfor %}<br>
-        <br>
+      </div>
+
+        <div class="container"> 
+          <h2>Flight back:</h2>
+        <ul class="segmented-control">
+            <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="0" name="retDay" id="retMon0" >
+                <label class="segmented-control__label" for="retMon0">Mon</label>
+            </li>
+            <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="1" name="retDay" id="retTue1" >
+                <label class="segmented-control__label" for="retTue1">Tue</label>
+            </li>
+            <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="2" name="retDay" id="retWed2" >
+                <label class="segmented-control__label" for="retWed2">Wed</label>
+            </li>
+            <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="3" name="retDay" id="retThu3" >
+                <label class="segmented-control__label" for="retThu3">Thu</label>
+            </li>
+            <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="4" name="retDay" id="retFri4" >
+                <label class="segmented-control__label" for="retFri4">Fri</label>
+            </li>
+            <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="5" name="retDay" id="retSat5" >
+                <label class="segmented-control__label" for="retSat5">Sat</label>
+            </li>
+            <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="6" name="retDay" id="retSun6" checked>
+                <label class="segmented-control__label" for="retSun6">Sun</label>
+            </li>
+        </ul>
         Please enter max number of stops on Returning Flight:<br>
         {{ form.maxStopsReturning(size=1) }}<br>
         {% for error in form.maxStopsReturning.errors %}
           <span style="color: red;">[{{ error }}]</span>
         {% endfor %}<br>
+      </div>
       </p>
       <p><input type="submit" value="Search"></p>
     </div>
