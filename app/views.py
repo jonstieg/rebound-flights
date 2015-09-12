@@ -15,7 +15,7 @@ def search():
     form = Search()
     rebound = ReBound()
     if form.validate_on_submit():
-        flights = rebound.reboundSearch(form.departingAirport.data, form.arrivingAirport.data, request.form['depDay'], request.form['retDay'], form.maxStopsDeparting.data, form.maxStopsReturning.data)
+        flights = rebound.reboundSearch(form.departingAirport.data, form.arrivingAirport.data, request.form['depDay'], request.form['retDay'], request.form['depStops'], request.form['retStops'])
         flash(flights)
         return redirect('/results')
     return render_template('search.html', 

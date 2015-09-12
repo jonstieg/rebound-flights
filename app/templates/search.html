@@ -5,22 +5,22 @@
   <h1>Search</h1>
     <form action="" method="post" name="search">
       {{ form.hidden_tag() }}
-      <p>
-              <div class="container"> 
-        Please enter your Departing Airport:
-        {{ form.departingAirport(size=3) }}<br>
-        {% for error in form.departingAirport.errors %}
-          <span style="color: red;">[{{ error }}]</span>
-        {% endfor %}<br>
-        Please enter your Arriving Airport:
-        {{ form.arrivingAirport(size=3) }}<br>
-        {% for error in form.arrivingAirport.errors %}
-          <span style="color: red;">[{{ error }}]</span>
-        {% endfor %}<br>
-      </div>
+        <div class="container"> 
+          Please enter your Departing Airport:
+          {{ form.departingAirport(size=3) }}<br>
+          {% for error in form.departingAirport.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+          {% endfor %}<br>
+          Please enter your Arriving Airport:
+          {{ form.arrivingAirport(size=3) }}<br>
+          {% for error in form.arrivingAirport.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+          {% endfor %}
+        </div>
         <br>
         <div class="container"> 
-          <h2>Flight there:</h2>
+          <h2>Flight there:</h2><br>
+          What day would you like to leave on?
         <ul class="segmented-control">
             <li class="segmented-control__item">
                 <input class="segmented-control__input" type="radio" value="0" name="depDay" id="DepMon0" >
@@ -52,16 +52,30 @@
             </li>
         </ul>
         <p>
-        <br>
-        Please enter max number of stops on Departing Flight:<br>
-        {{ form.maxStopsDeparting(size=1) }}<br>
-        {% for error in form.maxStopsDeparting.errors %}
-          <span style="color: red;">[{{ error }}]</span>
-        {% endfor %}<br>
+        How many stops are you willing to have on your way there?:
+        <ul class="segmented-control">
+            <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="0" name="depStops" id="noStops" checked>
+                <label class="segmented-control__label" for="noStops">0</label>
+            </li>
+            <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="1" name="depStops" id="oneStop" >
+                <label class="segmented-control__label" for="oneStop">1</label>
+            </li>
+            <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="2" name="depStops" id="twoStops" >
+                <label class="segmented-control__label" for="twoStops">2</label>
+            </li>
+            <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="3" name="depStops" id="threeStops" >
+                <label class="segmented-control__label" for="threeStops">3</label>
+            </li>
+          </ul>
       </div>
 
         <div class="container"> 
-          <h2>Flight back:</h2>
+          <h2>Flight back:</h2><br>
+          What day would you like to return on?
         <ul class="segmented-control">
             <li class="segmented-control__item">
                 <input class="segmented-control__input" type="radio" value="0" name="retDay" id="retMon0" >
@@ -92,14 +106,30 @@
                 <label class="segmented-control__label" for="retSun6">Sun</label>
             </li>
         </ul>
-        Please enter max number of stops on Returning Flight:<br>
-        {{ form.maxStopsReturning(size=1) }}<br>
-        {% for error in form.maxStopsReturning.errors %}
-          <span style="color: red;">[{{ error }}]</span>
-        {% endfor %}<br>
+                How many stops are you willing to have on your way back?:
+        <ul class="segmented-control">
+            <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="0" name="retStops" id="noStops" checked>
+                <label class="segmented-control__label" for="noStops">0</label>
+            </li>
+            <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="1" name="retStops" id="oneStop" >
+                <label class="segmented-control__label" for="oneStop">1</label>
+            </li>
+            <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="2" name="retStops" id="twoStops" >
+                <label class="segmented-control__label" for="twoStops">2</label>
+            </li>
+            <li class="segmented-control__item">
+                <input class="segmented-control__input" type="radio" value="3" name="retStops" id="threeStops" >
+                <label class="segmented-control__label" for="threeStops">3</label>
+            </li>
+          </ul>
       </div>
       </p>
-      <p><input type="submit" value="Search"></p>
+      <div class="container"> 
+        <p><input type="submit" value="Search"></p>
+    </div>
     </div>
   </form>
 {% endblock %}

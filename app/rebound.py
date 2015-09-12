@@ -6,7 +6,6 @@ from datetime import datetime, date, timedelta
 
 class ReBound():
   def reboundSearch(self, departingAirport, arrivingAirport, departingWeekday, returningWeekday, maxStopsDeparting, maxStopsReturning):
-    weekdays = {'mon': 0, 'tue': 1, 'wed': 2, 'thu': 3, 'fri': 4, 'sat': 5, 'sun': 6}
     departingWeekday = int(departingWeekday)
     returningWeekday = int(returningWeekday)
     weeksToSearch = 1
