@@ -13,6 +13,5 @@ def search():
     return render_template('search.html', 
                            title='Search',
                            form=form)
-
-
+    
     # https://www.google.com/flights/#search;f=SAN;t=JFK;d=2015-09-28;r=2015-10-02;s=1
