@@ -1,23 +1,23 @@
-.segmented-control {
+.oneline {
     display: table;
     width: 100%;
-    margin: 2em 0;
-    padding: 0;
+    padding-left:0;margin-left:0px;list-style:none
 }
 
-.segmented-control__item {
+.oneline__item {
     display: table-cell;
     margin: 0;
     padding: 0;
-    list-style-type: none;
+    width: 50px;
+    display:inline-block;
 }
 
-.segmented-control__input {
+.oneline__input {
     position: absolute;
     visibility: hidden;
 }
 
-.segmented-control__label {
+.oneline__label {
     display: block;
     margin: 0 -1px -1px 0;
     padding: 1em .25em;
@@ -32,11 +32,11 @@
     cursor: pointer;
 }
 
-.segmented-control__label:hover {
+.oneline__label:hover {
     background: #fafafa;
 }
 
-.segmented-control__input:checked + .segmented-control__label {
+.oneline__input:checked + .oneline__label {
     background: #eee;
     color: #333; 
 }

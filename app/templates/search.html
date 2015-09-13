@@ -71,6 +71,29 @@
                 <label class="segmented-control__label" for="DEPthreeStops">3</label>
             </li>
           </ul>
+          <p>
+            What's the earliest or latest you'd like your flight to take off?
+
+            <ul class="oneline">
+            Earliest:  {{ form.departingTimeEarly(size=2) }} 
+              <li class="oneline__item">
+                  <input class="oneline__input" type="radio" value="AM" name="depTimeEarly" id="departingTimeEarlyAM" checked>
+                  <label class="oneline__label" for="departingTimeEarlyAM">AM</label>
+              </li>
+              <li class="oneline__item">
+                  <input class="oneline__input" type="radio" value="PM" name="depTimeEarly" id="departingTimeEarlyPM" >
+                  <label class="oneline__label" for="departingTimeEarlyPM">PM</label>
+              </li>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Latest:  {{ form.returningTimeLate(size=2) }} 
+               <li class="oneline__item">
+                  <input class="oneline__input" type="radio" value="AM" name="depTimeLate" id="returningTimeLateAM" checked>
+                  <label class="oneline__label" for="returningTimeEarlyAM">AM</label>
+              </li>
+              <li class="oneline__item">
+                  <input class="oneline__input" type="radio" value="PM" name="depTimeLate" id="returningTimeLatePM" >
+                  <label class="oneline__label" for="returningTimeEarlyPM">PM</label>
+              </li>
+            </ul>
       </div>
 
         <div class="container"> 
@@ -128,7 +151,7 @@
       </div>
       </p>
       <div class="container"> 
-        <p><input type="submit" value="Search" ></p>
+        <p><input type="submit" value="Search" class="btn btn-primary btn-lg btn-block"></p>
       </div>
     </div>
   </form>
