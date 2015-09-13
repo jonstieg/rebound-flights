@@ -24,7 +24,9 @@
 
     border: 1px solid #ddd;
 
-    font: 14px/1.5 "Consolas", "Lucida Console"; 
+    font: 14px/1.5; 
+    font-family:Liberation Mono,Consolas,Monaco,Lucida Console,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+
     text-align: center;  
 
     cursor: pointer;
