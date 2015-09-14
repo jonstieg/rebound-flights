@@ -8,7 +8,6 @@
       <br>
       Please enter your Departing Airport:
       <!-- <input type="text" class="form-control" name="departingAirport" size="3"> -->
-
       {{ form.departingAirport(size=3) }}<br>
       {% for error in form.departingAirport.errors %}
         <span style="color: red;">[{{ error }}]</span>
@@ -53,152 +52,131 @@
           <label class="segmented-control__label" for="DepSun6">Sun</label>
         </li>
       </ul>
-      <p>
-        How many stops are you willing to have on your way there?
-        <ul class="segmented-control">
-          <li class="segmented-control__item">
-            <input class="segmented-control__input" type="radio" value="0" name="depStops" id="DEPnoStops" checked>
-            <label class="segmented-control__label" for="DEPnoStops">0</label>
-          </li>
-          <li class="segmented-control__item">
-            <input class="segmented-control__input" type="radio" value="1" name="depStops" id="DEPoneStop" >
-            <label class="segmented-control__label" for="DEPoneStop">1</label>
-          </li>
-          <li class="segmented-control__item">
-            <input class="segmented-control__input" type="radio" value="2" name="depStops" id="DEPtwoStops" >
-            <label class="segmented-control__label" for="DEPtwoStops">2</label>
-          </li>
-          <li class="segmented-control__item">
-            <input class="segmented-control__input" type="radio" value="99" name="depStops" id="DEPthreeStops" >
-            <label class="segmented-control__label" for="DEPthreeStops">&infin;</label>
-          </li>
-        </ul>
-        <p>
-          What's the earliest or latest you'd like your flight to take off? (Leave blank to depart at anytime)
-          <br>
-          <br>
+      <br>
+      How many stops are you willing to have on your way there?
+      <ul class="segmented-control">
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="0" name="depStops" id="DEPnoStops" checked>
+          <label class="segmented-control__label" for="DEPnoStops">0</label>
+        </li>
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="1" name="depStops" id="DEPoneStop" >
+          <label class="segmented-control__label" for="DEPoneStop">1</label>
+        </li>
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="2" name="depStops" id="DEPtwoStops" >
+          <label class="segmented-control__label" for="DEPtwoStops">2</label>
+        </li>
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="99" name="depStops" id="DEPthreeStops" >
+          <label class="segmented-control__label" for="DEPthreeStops">&infin;</label>
+        </li>
+      </ul>
+      <br>
+      What's the earliest or latest you'd like your flight to take off? (Leave blank to depart at anytime)
+      <br>
+      <br>
+      <ul class="oneline">
+        <div class = "trykeeptogether">
+          <div class = "trykeeptogether">
+            Earliest:
+            <input type="text" value="8" onClick="this.value='';" name="departingTimeEarly" size="2" style="text-align: right" pattern="\d*">
+            <li class="oneline__item">
+              <input class="oneline__input" type="radio" value="AM" name="depTimeEarly" id="departingTimeEarlyAM" checked>
+              <label class="oneline__label" for="departingTimeEarlyAM">AM</label>
+            </li>
+            <li class="oneline__item">
+              <input class="oneline__input" type="radio" value="PM" name="depTimeEarly" id="departingTimeEarlyPM" >
+              <label class="oneline__label" for="departingTimeEarlyPM">PM</label>
+            </li>
+          </div>
+          <div class = "trykeeptogether">Latest:
+            <input type="text" value="10" onClick="this.value='';" name="departingTimeLate" size="2" style="text-align: right" pattern="\d*">
+            <li class="oneline__item">
+              <input class="oneline__input" type="radio" value="AM" name="depTimeLate" id="departingtimeLateAM" >
+              <label class="oneline__label" for="departingtimeLateAM">AM</label>
+            </li>
+            <li class="oneline__item">
+              <input class="oneline__input" type="radio" value="PM" name="depTimeLate" id="departingtimeLatePM" checked>
+              <label class="oneline__label" for="departingtimeLatePM">PM</label>
+            </li>
+          </div>
+        </div>
+      </ul>
+    </div>
+    <div class="container">
+      <br>
+      <h2>Flight back:</h2><br>
+      What day would you like to return on?
+      <ul class="segmented-control">
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="0" name="retDay" id="retMon0" >
+          <label class="segmented-control__label" for="retMon0">Mon</label>
+        </li>
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="1" name="retDay" id="retTue1" >
+          <label class="segmented-control__label" for="retTue1">Tue</label>
+        </li>
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="2" name="retDay" id="retWed2" >
+          <label class="segmented-control__label" for="retWed2">Wed</label>
+        </li>
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="3" name="retDay" id="retThu3" >
+          <label class="segmented-control__label" for="retThu3">Thu</label>
+        </li>
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="4" name="retDay" id="retFri4" >
+          <label class="segmented-control__label" for="retFri4">Fri</label>
+        </li>
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="5" name="retDay" id="retSat5" >
+          <label class="segmented-control__label" for="retSat5">Sat</label>
+        </li>
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="6" name="retDay" id="retSun6" checked>
+          <label class="segmented-control__label" for="retSun6">Sun</label>
+        </li>
+      </ul>
+      How many stops are you willing to have on your way back?
+      <ul class="segmented-control">
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="0" name="retStops" id="RETnoStops" checked>
+          <label class="segmented-control__label" for="RETnoStops">0</label>
+        </li>
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="1" name="retStops" id="REToneStop" >
+          <label class="segmented-control__label" for="REToneStop">1</label>
+        </li>
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="2" name="retStops" id="RETtwoStops" >
+          <label class="segmented-control__label" for="RETtwoStops">2</label>
+        </li>
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="99" name="retStops" id="RETthreeStops" >
+          <label class="segmented-control__label" for="RETthreeStops">&infin;</label>
+        </li>
+      </ul>
+      <br>
+      What's the earliest or latest you'd like your flight to take off? (Leave blank to depart at anytime)
+      <br>
+      <br>
+      <fieldset class="form-inline">
           <ul class="oneline">
             <div class = "trykeeptogether">
-              <div class = "trykeeptogether">
-                Earliest:
-                <input type="text" value="8" onClick="this.value='';" name="departingTimeEarly" size="2" style="text-align: right" pattern="\d*">
                 <li class="oneline__item">
-                  <input class="oneline__input" type="radio" value="AM" name="depTimeEarly" id="departingTimeEarlyAM" checked>
-                  <label class="oneline__label" for="departingTimeEarlyAM">AM</label>
                 </li>
                 <li class="oneline__item">
-                  <input class="oneline__input" type="radio" value="PM" name="depTimeEarly" id="departingTimeEarlyPM" >
-                  <label class="oneline__label" for="departingTimeEarlyPM">PM</label>
                 </li>
               </div>
               <div class = "trykeeptogether">Latest:
-                <input type="text" value="10" onClick="this.value='';" name="departingTimeLate" size="2" style="text-align: right" pattern="\d*">
                 <li class="oneline__item">
-                  <input class="oneline__input" type="radio" value="AM" name="depTimeLate" id="departingtimeLateAM" >
-                  <label class="oneline__label" for="departingtimeLateAM">AM</label>
                 </li>
                 <li class="oneline__item">
-                  <input class="oneline__input" type="radio" value="PM" name="depTimeLate" id="departingtimeLatePM" checked>
-                  <label class="oneline__label" for="departingtimeLatePM">PM</label>
                 </li>
               </div>
             </div>
           </ul>
-        </div>
-        <div class="container">
-          <br>
-          <h2>Flight back:</h2><br>
-          What day would you like to return on?
-          <ul class="segmented-control">
-            <li class="segmented-control__item">
-              <input class="segmented-control__input" type="radio" value="0" name="retDay" id="retMon0" >
-              <label class="segmented-control__label" for="retMon0">Mon</label>
-            </li>
-            <li class="segmented-control__item">
-              <input class="segmented-control__input" type="radio" value="1" name="retDay" id="retTue1" >
-              <label class="segmented-control__label" for="retTue1">Tue</label>
-            </li>
-            <li class="segmented-control__item">
-              <input class="segmented-control__input" type="radio" value="2" name="retDay" id="retWed2" >
-              <label class="segmented-control__label" for="retWed2">Wed</label>
-            </li>
-            <li class="segmented-control__item">
-              <input class="segmented-control__input" type="radio" value="3" name="retDay" id="retThu3" >
-              <label class="segmented-control__label" for="retThu3">Thu</label>
-            </li>
-            <li class="segmented-control__item">
-              <input class="segmented-control__input" type="radio" value="4" name="retDay" id="retFri4" >
-              <label class="segmented-control__label" for="retFri4">Fri</label>
-            </li>
-            <li class="segmented-control__item">
-              <input class="segmented-control__input" type="radio" value="5" name="retDay" id="retSat5" >
-              <label class="segmented-control__label" for="retSat5">Sat</label>
-            </li>
-            <li class="segmented-control__item">
-              <input class="segmented-control__input" type="radio" value="6" name="retDay" id="retSun6" checked>
-              <label class="segmented-control__label" for="retSun6">Sun</label>
-            </li>
-          </ul>
-          How many stops are you willing to have on your way back?
-          <ul class="segmented-control">
-            <li class="segmented-control__item">
-              <input class="segmented-control__input" type="radio" value="0" name="retStops" id="RETnoStops" checked>
-              <label class="segmented-control__label" for="RETnoStops">0</label>
-            </li>
-            <li class="segmented-control__item">
-              <input class="segmented-control__input" type="radio" value="1" name="retStops" id="REToneStop" >
-              <label class="segmented-control__label" for="REToneStop">1</label>
-            </li>
-            <li class="segmented-control__item">
-              <input class="segmented-control__input" type="radio" value="2" name="retStops" id="RETtwoStops" >
-              <label class="segmented-control__label" for="RETtwoStops">2</label>
-            </li>
-            <li class="segmented-control__item">
-              <input class="segmented-control__input" type="radio" value="99" name="retStops" id="RETthreeStops" >
-              <label class="segmented-control__label" for="RETthreeStops">&infin;</label>
-            </li>
-          </ul>
-          <p>
-            What's the earliest or latest you'd like your flight to take off? (Leave blank to depart at anytime)
-            <br>
-            <br>
-            <fieldset class="form-inline">
-              <form class="form-inline">
-                <ul class="oneline">
-                  <div class = "trykeeptogether">
-                    <div class = "trykeeptogether">Earliest:
-                      <input type="text" value="8" class="form-control" onClick="this.value='';" name="returningTimeEarly" size="2" style="text-align: right" pattern="\d*">
-                      <li class="oneline__item">
-                        <input class="oneline__input" type="radio" value="AM" name="retTimeEarly" id="returningTimeEarlyAM" checked>
-                        <label class="oneline__label" for="returningTimeEarlyAM">AM</label>
-                      </li>
-                      <li class="oneline__item">
-                        <input class="oneline__input" type="radio" value="PM" name="retTimeEarly" id="returningTimeEarlyPM" >
-                        <label class="oneline__label" for="returningTimeEarlyPM">PM</label>
-                      </li>
-                    </div>
-                    <div class = "trykeeptogether">Latest:
-                      <input type="text" value="10" class="form-control" onClick="this.value='';" name="returningTimeLate" size="2" style="text-align: right" pattern="\d*">
-                      <li class="oneline__item">
-                        <input class="oneline__input" type="radio" value="AM" name="retTimeLate" id="returningtimeLateAM" >
-                        <label class="oneline__label" for="returningtimeLateAM">AM</label>
-                      </li>
-                      <li class="oneline__item">
-                        <input class="oneline__input" type="radio" value="PM" name="retTimeLate" id="returningtimeLatePM" checked>
-                        <label class="oneline__label" for="returningtimeLatePM">PM</label>
-                      </li>
-                    </div>
-                  </div>
-                </ul>
-              </form>
-            </fieldset>
-          </div>
-        </div>
-      </p>
-      <br>
-      <div class="container">
-        <p><input type="submit" value="Search" class="btn btn-primary btn-lg btn-block"></p>
-      </div>
     </div>
   </form>
 {% endblock %}
