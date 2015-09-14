@@ -4,9 +4,11 @@
   <form action="" method="post" name="search">
     {{ form.hidden_tag() }}
     <div class="container">
-      <h2><u>Search</u></h2>
+      <h1><u>Search</u></h1>
       <br>
       Please enter your Departing Airport:
+      <!-- <input type="text" class="form-control" name="departingAirport" size="3"> -->
+
       {{ form.departingAirport(size=3) }}<br>
       {% for error in form.departingAirport.errors %}
         <span style="color: red;">[{{ error }}]</span>
@@ -79,7 +81,7 @@
             <div class = "trykeeptogether">
               <div class = "trykeeptogether">
                 Earliest:
-                <input type="text" value="8" onClick="this.value='';" name="departingTimeEarly" size="2" style="text-align: right">
+                <input type="text" value="8" onClick="this.value='';" name="departingTimeEarly" size="2" style="text-align: right" pattern="\d*">
                 <li class="oneline__item">
                   <input class="oneline__input" type="radio" value="AM" name="depTimeEarly" id="departingTimeEarlyAM" checked>
                   <label class="oneline__label" for="departingTimeEarlyAM">AM</label>
@@ -90,7 +92,7 @@
                 </li>
               </div>
               <div class = "trykeeptogether">Latest:
-                <input type="text" value="10" onClick="this.value='';" name="departingTimeLate" size="2" style="text-align: right">
+                <input type="text" value="10" onClick="this.value='';" name="departingTimeLate" size="2" style="text-align: right" pattern="\d*">
                 <li class="oneline__item">
                   <input class="oneline__input" type="radio" value="AM" name="depTimeLate" id="departingtimeLateAM" >
                   <label class="oneline__label" for="departingtimeLateAM">AM</label>
@@ -165,7 +167,7 @@
                 <ul class="oneline">
                   <div class = "trykeeptogether">
                     <div class = "trykeeptogether">Earliest:
-                      <input type="text" value="8" class="form-control" onClick="this.value='';" name="returningTimeEarly" size="2" style="text-align: right">
+                      <input type="text" value="8" class="form-control" onClick="this.value='';" name="returningTimeEarly" size="2" style="text-align: right" pattern="\d*">
                       <li class="oneline__item">
                         <input class="oneline__input" type="radio" value="AM" name="retTimeEarly" id="returningTimeEarlyAM" checked>
                         <label class="oneline__label" for="returningTimeEarlyAM">AM</label>
@@ -176,7 +178,7 @@
                       </li>
                     </div>
                     <div class = "trykeeptogether">Latest:
-                      <input type="text" value="10" class="form-control" onClick="this.value='';" name="returningTimeLate" size="2" style="text-align: right">
+                      <input type="text" value="10" class="form-control" onClick="this.value='';" name="returningTimeLate" size="2" style="text-align: right" pattern="\d*">
                       <li class="oneline__item">
                         <input class="oneline__input" type="radio" value="AM" name="retTimeLate" id="returningtimeLateAM" >
                         <label class="oneline__label" for="returningtimeLateAM">AM</label>
