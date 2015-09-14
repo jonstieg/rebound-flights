@@ -1,3 +1,6 @@
+.trykeeptogether {
+    display: inline-block;
+}
 .segmented-control {
     display: table;
     width: 100%;

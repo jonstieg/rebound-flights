@@ -5,9 +5,15 @@ import operator
 from datetime import datetime, date, timedelta
 
 class ReBound():
-  def reboundSearch(self, departingAirport, arrivingAirport, departingWeekday, returningWeekday, maxStopsDeparting, maxStopsReturning):
+  def reboundSearch(self, departingAirport, arrivingAirport, departingWeekday, returningWeekday, maxStopsDeparting, maxStopsReturning, departingTimeEarly, departingTimeLate, returningTimeEarly, returningTimeLate):
     departingWeekday = int(departingWeekday)
     returningWeekday = int(returningWeekday)
+
+    # departingTimeEarly
+    # departingTimeLate 
+    # returningTimeEarly 
+    # returningTimeLate
+
     weeksToSearch = 1
 
     api_key = "AIzaSyBZj9cQKwEbMVQoSAgbfP1nhntS7peg-Jw"
