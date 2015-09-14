@@ -5,15 +5,14 @@ import operator
 from datetime import datetime, date, timedelta
 
 class ReBound():
-  def reboundSearch(self, departingAirport, arrivingAirport, departingWeekday, returningWeekday, maxStopsDeparting, maxStopsReturning, departingTimeEarly, departingTimeLate, returningTimeEarly, returningTimeLate):
+  def reboundSearch(self, departingAirport, arrivingAirport, departingWeekday, returningWeekday, maxStopsDeparting, maxStopsReturning, departingTimeEarly, departingTimeEarlyAMPM, departingTimeLate, departingTimeLateAMPM, returningTimeEarly, returningTimeEarlyAMPM, returningTimeLate, returningTimeLateAMPM):
     departingWeekday = int(departingWeekday)
     returningWeekday = int(returningWeekday)
 
-    # departingTimeEarly
-    # departingTimeLate 
-    # returningTimeEarly 
-    # returningTimeLate
-
+    departingTimeEarly = "00:00" if departingTimeEarly == '' else str(int(departingTimeEarly) + int(departingTimeEarlyAMPM)) + ":00"
+    returningTimeEarly = "00:00" if returningTimeEarly == '' else str(int(returningTimeEarly) + int(returningTimeEarlyAMPM)) + ":00"
+    departingTimeLate = "23:59" if departingTimeLate == '' else str(int(departingTimeLate) + int(departingTimeLateAMPM)) + ":00"
+    returningTimeLate = "23:59" if returningTimeLate == '' else str(int(returningTimeLate) + int(returningTimeLateAMPM)) + ":00"
     weeksToSearch = 10
 
     api_key = "AIzaSyBZj9cQKwEbMVQoSAgbfP1nhntS7peg-Jw"
@@ -38,7 +37,8 @@ class ReBound():
               "date": (dateGo + timedelta(7 * x)).strftime('%Y-%m-%d'),
               "maxStops": maxStopsDeparting,
               "permittedDepartureTime": {
-                "earliestTime": "17:00",
+                "earliestTime": departingTimeEarly,
+                "latestTime": departingTimeLate
               }
             },
             {
@@ -47,8 +47,8 @@ class ReBound():
               "date": (dateReturn + timedelta(7 * x)).strftime('%Y-%m-%d'),
               "maxStops": maxStopsReturning,
               "permittedDepartureTime": {
-                "earliestTime": "13:30",
-                "latestTime": "23:00"
+                "earliestTime": returningTimeEarly,
+                "latestTime": returningTimeLate
               }
             }
           ],

@@ -9,7 +9,7 @@ def search():
     form = Search()
     rebound = ReBound()
     if form.validate_on_submit():
-        flights = rebound.reboundSearch(form.departingAirport.data, form.arrivingAirport.data, request.form['depDay'], request.form['retDay'], request.form['depStops'], request.form['retStops'], request.form['departingTimeEarly'], request.form['departingTimeLate'], request.form['returningTimeEarly'], request.form['returningTimeLate'])
+        flights = rebound.reboundSearch(form.departingAirport.data, form.arrivingAirport.data, request.form['depDay'], request.form['retDay'], request.form['depStops'], request.form['retStops'], request.form['departingTimeEarly'],request.form['depTimeEarlyAMPM'], request.form['departingTimeLate'], request.form['depTimeLateAMPM'], request.form['returningTimeEarly'], request.form['retTimeEarlyAMPM'], request.form['returningTimeLate'], request.form['retTimeLateAMPM'])
         flash ('Results:')
         for x in flights:
             year = x[0][:4]
@@ -17,8 +17,7 @@ def search():
             day = x[0][8:10]
             months = {"01":"Januray", "02": "February", "03": "March", "04": "April", "05":"May", "06":"June", "07":"July", "08":"August", "09": "September", "10":"October", "11":"November", "12":"December"}
             flash("On %s %s, %s your flight will cost $%s" % (months[month], day, year, x[1]))
-            return
-            #2015-09-24T21:00-07:00
+           # 2015-09-24T21:00-07:00
     return render_template('search.html', 
                            title='Search',
                            form=form)
