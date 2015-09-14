@@ -8,8 +8,11 @@ def search():
     form = Search()
     rebound = ReBound()
     if form.validate_on_submit():
-        flights = rebound.reboundSearch(form.departingAirport.data, form.arrivingAirport.data, request.form['depDay'], request.form['retDay'], request.form['depStops'], request.form['retStops'], request.form['departingTimeEarly'], request.form['departingTimeLate'], request.form['returningTimeEarly'], request.form['returningTimeLate'])
-        flash(flights)
+        # flights = rebound.reboundSearch(form.departingAirport.data, form.arrivingAirport.data, request.form['depDay'], request.form['retDay'], request.form['depStops'], request.form['retStops'], request.form['departingTimeEarly'], request.form['departingTimeLate'], request.form['returningTimeEarly'], request.form['returningTimeLate'])
+        # flash(flights)
+        flash('sdfdfsdfsd www.google.com')
+        flash('sdfdfsdfsd')
+
 
     return render_template('search.html', 
                            title='Search',

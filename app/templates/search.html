@@ -8,12 +8,12 @@
       <br>
       Please enter your Departing Airport:
       <!-- <input type="text" class="form-control" name="departingAirport" size="3"> -->
-      {{ form.departingAirport(size=3) }}<br>
+      {{ form.departingAirport(size=5) }}<br>
       {% for error in form.departingAirport.errors %}
         <span style="color: red;">[{{ error }}]</span>
       {% endfor %}<br>
       Please enter your Arriving Airport:
-      {{ form.arrivingAirport(size=3) }}<br>
+      {{ form.arrivingAirport(size=5) }}<br>
       {% for error in form.arrivingAirport.errors %}
         <span style="color: red;">[{{ error }}]</span>
       {% endfor %}
@@ -164,19 +164,36 @@
       <fieldset class="form-inline">
           <ul class="oneline">
             <div class = "trykeeptogether">
+              <div class = "trykeeptogether">Earliest:
+                <input type="text" value="8" class="form-control" onClick="this.value='';" name="returningTimeEarly" size="2" style="text-align: right" pattern="\d*">
                 <li class="oneline__item">
+                  <input class="oneline__input" type="radio" value="AM" name="retTimeEarly" id="returningTimeEarlyAM" checked>
+                  <label class="oneline__label" for="returningTimeEarlyAM">AM</label>
                 </li>
                 <li class="oneline__item">
+                  <input class="oneline__input" type="radio" value="PM" name="retTimeEarly" id="returningTimeEarlyPM" >
+                  <label class="oneline__label" for="returningTimeEarlyPM">PM</label>
                 </li>
               </div>
               <div class = "trykeeptogether">Latest:
+                <input type="text" value="10" class="form-control" onClick="this.value='';" name="returningTimeLate" size="2" style="text-align: right" pattern="\d*">
                 <li class="oneline__item">
+                  <input class="oneline__input" type="radio" value="AM" name="retTimeLate" id="returningtimeLateAM" >
+                  <label class="oneline__label" for="returningtimeLateAM">AM</label>
                 </li>
                 <li class="oneline__item">
+                  <input class="oneline__input" type="radio" value="PM" name="retTimeLate" id="returningtimeLatePM" checked>
+                  <label class="oneline__label" for="returningtimeLatePM">PM</label>
                 </li>
               </div>
             </div>
           </ul>
+      </fieldset>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+      <p><input type="submit" value="Search" class="btn btn-primary btn-lg btn-block" ></p>
     </div>
   </form>
 {% endblock %}
