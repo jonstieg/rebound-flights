@@ -13,7 +13,7 @@ class ReBound():
     returningTimeEarly = "00:00" if returningTimeEarly == '' else str(int(returningTimeEarly) + int(returningTimeEarlyAMPM)) + ":00"
     departingTimeLate = "23:59" if departingTimeLate == '' else str(int(departingTimeLate) + int(departingTimeLateAMPM)) + ":00"
     returningTimeLate = "23:59" if returningTimeLate == '' else str(int(returningTimeLate) + int(returningTimeLateAMPM)) + ":00"
-    weeksToSearch = 1
+    weeksToSearch = 3
 
     api_key = "AIzaSyBZj9cQKwEbMVQoSAgbfP1nhntS7peg-Jw"
     url = "https://www.googleapis.com/qpxExpress/v1/trips/search?key=" + api_key
