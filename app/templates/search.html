@@ -56,7 +56,7 @@
       How many stops are you willing to have on your way there?
       <ul class="segmented-control">
         <li class="segmented-control__item">
-          <input class="segmented-control__input" type="radio" value="0" name="depStops" id="DEPnoStops" checked>
+          <input class="segmented-control__input" type="radio" value="0" name="depStops" id="DEPnoStops" >
           <label class="segmented-control__label" for="DEPnoStops">0</label>
         </li>
         <li class="segmented-control__item">
@@ -68,7 +68,7 @@
           <label class="segmented-control__label" for="DEPtwoStops">2</label>
         </li>
         <li class="segmented-control__item">
-          <input class="segmented-control__input" type="radio" value="99" name="depStops" id="DEPthreeStops" >
+          <input class="segmented-control__input" type="radio" value="99" name="depStops" id="DEPthreeStops" checked>
           <label class="segmented-control__label" for="DEPthreeStops">&infin;</label>
         </li>
       </ul>
@@ -90,7 +90,8 @@
               <label class="oneline__label" for="departingTimeEarlyPM">PM</label>
             </li>
           </div>
-          <div class = "trykeeptogether">Latest:
+          &nbsp;&nbsp;&nbsp;
+          <div class = "trykeeptogether">Latest:&nbsp;&nbsp;
             <input type="text" value="10" onClick="this.value='';" name="departingTimeLate" size="2" style="text-align: right" pattern="\d*">
             <li class="oneline__item">
               <input class="oneline__input" type="radio" value="0" name="depTimeLateAMPM" id="departingtimeLateAM" >
@@ -141,7 +142,7 @@
       How many stops are you willing to have on your way back?
       <ul class="segmented-control">
         <li class="segmented-control__item">
-          <input class="segmented-control__input" type="radio" value="0" name="retStops" id="RETnoStops" checked>
+          <input class="segmented-control__input" type="radio" value="0" name="retStops" id="RETnoStops" >
           <label class="segmented-control__label" for="RETnoStops">0</label>
         </li>
         <li class="segmented-control__item">
@@ -153,7 +154,7 @@
           <label class="segmented-control__label" for="RETtwoStops">2</label>
         </li>
         <li class="segmented-control__item">
-          <input class="segmented-control__input" type="radio" value="99" name="retStops" id="RETthreeStops" >
+          <input class="segmented-control__input" type="radio" value="99" name="retStops" id="RETthreeStops" checked>
           <label class="segmented-control__label" for="RETthreeStops">&infin;</label>
         </li>
       </ul>
@@ -161,34 +162,34 @@
       What's the earliest or latest you'd like your flight to take off? (Leave blank to depart at anytime)
       <br>
       <br>
-      <fieldset class="form-inline">
-          <ul class="oneline">
-            <div class = "trykeeptogether">
-              <div class = "trykeeptogether">Earliest:
-                <input type="text" value="8" class="form-control" onClick="this.value='';" name="returningTimeEarly" size="2" style="text-align: right" pattern="\d*">
-                <li class="oneline__item">
-                  <input class="oneline__input" type="radio" value="0" name="retTimeEarlyAMPM" id="returningTimeEarlyAM" checked>
-                  <label class="oneline__label" for="returningTimeEarlyAM">AM</label>
-                </li>
-                <li class="oneline__item">
-                  <input class="oneline__input" type="radio" value="12" name="retTimeEarlyAMPM" id="returningTimeEarlyPM" >
-                  <label class="oneline__label" for="returningTimeEarlyPM">PM</label>
-                </li>
-              </div>
-              <div class = "trykeeptogether">Latest:
-                <input type="text" value="10" class="form-control" onClick="this.value='';" name="returningTimeLate" size="2" style="text-align: right" pattern="\d*">
-                <li class="oneline__item">
-                  <input class="oneline__input" type="radio" value="0" name="retTimeLateAMPM" id="returningtimeLateAM" >
-                  <label class="oneline__label" for="returningtimeLateAM">AM</label>
-                </li>
-                <li class="oneline__item">
-                  <input class="oneline__input" type="radio" value="12" name="retTimeLateAMPM" id="returningtimeLatePM" checked>
-                  <label class="oneline__label" for="returningtimeLatePM">PM</label>
-                </li>
-              </div>
-            </div>
-          </ul>
-      </fieldset>
+      <ul class="oneline">
+        <div class = "trykeeptogether">
+          <div class = "trykeeptogether">
+            Earliest:
+            <input type="text" value="8" onClick="this.value='';" name="returningTimeEarly" size="2" style="text-align: right" pattern="\d*">
+            <li class="oneline__item">
+              <input class="oneline__input" type="radio" value="0" name="retTimeEarlyAMPM" id="returningTimeEarlyAM" checked>
+              <label class="oneline__label" for="returningTimeEarlyAM">AM</label>
+            </li>
+            <li class="oneline__item">
+              <input class="oneline__input" type="radio" value="12" name="retTimeEarlyAMPM" id="returningTimeEarlyPM" >
+              <label class="oneline__label" for="returningTimeEarlyPM">PM</label>
+            </li>
+          </div>
+          &nbsp;&nbsp;&nbsp;
+          <div class = "trykeeptogether">Latest:&nbsp;&nbsp;
+            <input type="text" value="10" onClick="this.value='';" name="returningTimeLate" size="2" style="text-align: right" pattern="\d*">
+            <li class="oneline__item">
+              <input class="oneline__input" type="radio" value="0" name="retTimeLateAMPM" id="returningtimeLateAM" >
+              <label class="oneline__label" for="returningtimeLateAM">AM</label>
+            </li>
+            <li class="oneline__item">
+              <input class="oneline__input" type="radio" value="12" name="retTimeLateAMPM" id="returningtimeLatePM" checked>
+              <label class="oneline__label" for="returningtimeLatePM">PM</label>
+            </li>
+          </div>
+        </div>
+      </ul>
     </div>
     <br>
     <br>
