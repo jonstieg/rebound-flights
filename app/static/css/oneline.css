@@ -7,7 +7,7 @@
 .oneline__item {
     display: table-cell;
     margin: 0;
-    padding: 0;
+    padding-bottom: 6px;
     width: 50px;
     display:inline-block;
 }
@@ -25,7 +25,7 @@
     border: 1px solid #ddd;
 
     font: 14px/1.5; 
-    font-family:Liberation Mono,Consolas,Monaco,Lucida Console,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+    font-family:Bitstream Vera Sans Mono,Monaco,DejaVu Sans Mono,Lucida Console,Consolas,Menlo,Liberation Mono,Courier New, monospace;
 
     text-align: center;  
 

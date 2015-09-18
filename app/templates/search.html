@@ -52,7 +52,6 @@
           <label class="segmented-control__label" for="DepSun6">Sun</label>
         </li>
       </ul>
-      <br>
       How many stops are you willing to have on your way there?
       <ul class="segmented-control">
         <li class="segmented-control__item">
@@ -72,32 +71,31 @@
           <label class="segmented-control__label" for="DEPthreeStops">&infin;</label>
         </li>
       </ul>
-      <br>
       What's the earliest or latest you'd like your flight to take off? (Leave blank to depart at anytime)
       <br>
       <br>
       <ul class="oneline">
         <div class = "trykeeptogether">
           <div class = "trykeeptogether">
-            Earliest:
+            <tt>Early:</tt>
             <input type="text" value="8" onClick="this.value='';" name="departingTimeEarly" size="2" style="text-align: right" pattern="\d*">
             <li class="oneline__item">
               <input class="oneline__input" type="radio" value="0" name="depTimeEarlyAMPM" id="departingTimeEarlyAM" checked>
               <label class="oneline__label" for="departingTimeEarlyAM">AM</label>
-            </li>
-            <li class="oneline__item">
+            </li><!--
+            --><li class="oneline__item">
               <input class="oneline__input" type="radio" value="12" name="depTimeEarlyAMPM" id="departingTimeEarlyPM" >
               <label class="oneline__label" for="departingTimeEarlyPM">PM</label>
             </li>
           </div>
           &nbsp;&nbsp;&nbsp;
-          <div class = "trykeeptogether">Latest:&nbsp;&nbsp;
+          <div class = "trykeeptogether"><tt>Late:&nbsp;</tt>
             <input type="text" value="10" onClick="this.value='';" name="departingTimeLate" size="2" style="text-align: right" pattern="\d*">
             <li class="oneline__item">
               <input class="oneline__input" type="radio" value="0" name="depTimeLateAMPM" id="departingtimeLateAM" >
               <label class="oneline__label" for="departingtimeLateAM">AM</label>
-            </li>
-            <li class="oneline__item">
+            </li><!--
+            --><li class="oneline__item">
               <input class="oneline__input" type="radio" value="12" name="depTimeLateAMPM" id="departingtimeLatePM" checked>
               <label class="oneline__label" for="departingtimeLatePM">PM</label>
             </li>
@@ -106,7 +104,6 @@
       </ul>
     </div>
     <div class="container">
-      <br>
       <h2>Flight back:</h2><br>
       What day would you like to return on?
       <ul class="segmented-control">
@@ -158,32 +155,31 @@
           <label class="segmented-control__label" for="RETthreeStops">&infin;</label>
         </li>
       </ul>
-      <br>
       What's the earliest or latest you'd like your flight to take off? (Leave blank to depart at anytime)
       <br>
       <br>
       <ul class="oneline">
         <div class = "trykeeptogether">
           <div class = "trykeeptogether">
-            Earliest:
+            <tt>Early:</tt>
             <input type="text" value="8" onClick="this.value='';" name="returningTimeEarly" size="2" style="text-align: right" pattern="\d*">
             <li class="oneline__item">
               <input class="oneline__input" type="radio" value="0" name="retTimeEarlyAMPM" id="returningTimeEarlyAM" checked>
               <label class="oneline__label" for="returningTimeEarlyAM">AM</label>
-            </li>
-            <li class="oneline__item">
+            </li><!--
+            --><li class="oneline__item">
               <input class="oneline__input" type="radio" value="12" name="retTimeEarlyAMPM" id="returningTimeEarlyPM" >
               <label class="oneline__label" for="returningTimeEarlyPM">PM</label>
             </li>
           </div>
           &nbsp;&nbsp;&nbsp;
-          <div class = "trykeeptogether">Latest:&nbsp;&nbsp;
+          <div class = "trykeeptogether"><tt>Late:&nbsp;</tt>
             <input type="text" value="10" onClick="this.value='';" name="returningTimeLate" size="2" style="text-align: right" pattern="\d*">
             <li class="oneline__item">
               <input class="oneline__input" type="radio" value="0" name="retTimeLateAMPM" id="returningtimeLateAM" >
               <label class="oneline__label" for="returningtimeLateAM">AM</label>
-            </li>
-            <li class="oneline__item">
+            </li><!--
+            --><li class="oneline__item">
               <input class="oneline__input" type="radio" value="12" name="retTimeLateAMPM" id="returningtimeLatePM" checked>
               <label class="oneline__label" for="returningtimeLatePM">PM</label>
             </li>
@@ -191,7 +187,6 @@
         </div>
       </ul>
     </div>
-    <br>
     <br>
     <div class="container">
       <p><input type="submit" value="Search" class="btn btn-primary btn-lg btn-block" ></p>
