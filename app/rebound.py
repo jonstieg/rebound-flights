@@ -16,6 +16,8 @@ class ReBound():
     returningTimeLate = "23:59" if returningTimeLate == '' else str(int(returningTimeLate) + int(returningTimeLateAMPM)) + ":00"
     weeksToSearch = 1
 
+    time.sleep(35)
+    
     api_key = "AIzaSyBZj9cQKwEbMVQoSAgbfP1nhntS7peg-Jw"
     url = "https://www.googleapis.com/qpxExpress/v1/trips/search?key=" + api_key
     headers = {'content-type': 'application/json'}
