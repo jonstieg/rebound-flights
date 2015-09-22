@@ -2,10 +2,11 @@ import json
 import requests
 import os
 import operator
+import time
 from datetime import datetime, date, timedelta
 
 class ReBound():
-  def reboundSearch(self, departingAirport, arrivingAirport, departingWeekday, returningWeekday, maxStopsDeparting, maxStopsReturning, departingTimeEarly, departingTimeEarlyAMPM, departingTimeLate, departingTimeLateAMPM, returningTimeEarly, returningTimeEarlyAMPM, returningTimeLate, returningTimeLateAMPM):
+  def reboundSearch(self, dateGo, departingAirport, arrivingAirport, departingWeekday, returningWeekday, maxStopsDeparting, maxStopsReturning, departingTimeEarly, departingTimeEarlyAMPM, departingTimeLate, departingTimeLateAMPM, returningTimeEarly, returningTimeEarlyAMPM, returningTimeLate, returningTimeLateAMPM):
     departingWeekday = int(departingWeekday)
     returningWeekday = int(returningWeekday)
 
@@ -13,13 +14,13 @@ class ReBound():
     returningTimeEarly = "00:00" if returningTimeEarly == '' else str(int(returningTimeEarly) + int(returningTimeEarlyAMPM)) + ":00"
     departingTimeLate = "23:59" if departingTimeLate == '' else str(int(departingTimeLate) + int(departingTimeLateAMPM)) + ":00"
     returningTimeLate = "23:59" if returningTimeLate == '' else str(int(returningTimeLate) + int(returningTimeLateAMPM)) + ":00"
-    weeksToSearch = 8
+    weeksToSearch = 1
 
     api_key = "AIzaSyBZj9cQKwEbMVQoSAgbfP1nhntS7peg-Jw"
     url = "https://www.googleapis.com/qpxExpress/v1/trips/search?key=" + api_key
     headers = {'content-type': 'application/json'}
 
-    dateGo = datetime.today()
+    #dateGo = datetime.today()
     while dateGo.weekday() != departingWeekday: 
         dateGo += timedelta(days=1)
     dateReturn = dateGo
