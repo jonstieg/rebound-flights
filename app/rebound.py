@@ -4,6 +4,8 @@ import os
 import operator
 import time
 from datetime import datetime, date, timedelta
+from easygui import msgbox
+
 
 class ReBound():
   def reboundSearch(self, dateGo, departingAirport, arrivingAirport, departingWeekday, returningWeekday, maxStopsDeparting, maxStopsReturning, departingTimeEarly, departingTimeEarlyAMPM, departingTimeLate, departingTimeLateAMPM, returningTimeEarly, returningTimeEarlyAMPM, returningTimeLate, returningTimeLateAMPM):
@@ -18,7 +20,9 @@ class ReBound():
 
     # time.sleep(35)
 
-    api_key = environ['googAPI']
+    api_key = os.environ['googAPI']
+    msgbox(os.environ['googAPI'])
+
     url = "https://www.googleapis.com/qpxExpress/v1/trips/search?key=" + api_key
     headers = {'content-type': 'application/json'}
 
