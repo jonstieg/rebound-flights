@@ -1,0 +1,2712 @@
+{
+ "1": {
+  "kind": "qpxExpress#tripsSearch", 
+  "trips": {
+   "tripOption": [
+    {
+     "saleTotal": "USD763.20", 
+     "kind": "qpxexpress#tripOption", 
+     "slice": [
+      {
+       "duration": 314, 
+       "kind": "qpxexpress#sliceInfo", 
+       "segment": [
+        {
+         "kind": "qpxexpress#segmentInfo", 
+         "bookingCodeCount": 7, 
+         "flight": {
+          "carrier": "B6", 
+          "number": "90"
+         }, 
+         "leg": [
+          {
+           "origin": "SAN", 
+           "originTerminal": "2", 
+           "departureTime": "2015-09-03T20:41-07:00", 
+           "destinationTerminal": "5", 
+           "secure": true, 
+           "destination": "JFK", 
+           "kind": "qpxexpress#legInfo", 
+           "aircraft": "320", 
+           "onTimePerformance": 90, 
+           "arrivalTime": "2015-09-04T04:55-04:00", 
+           "duration": 314, 
+           "id": "LJ5H2i3T-K9kHTlO", 
+           "mileage": 2439
+          }
+         ], 
+         "bookingCode": "B", 
+         "duration": 314, 
+         "id": "GO2-xL3mgYXCLPei", 
+         "cabin": "COACH", 
+         "marriedSegmentGroup": "0"
+        }
+       ]
+      }, 
+      {
+       "duration": 372, 
+       "kind": "qpxexpress#sliceInfo", 
+       "segment": [
+        {
+         "kind": "qpxexpress#segmentInfo", 
+         "bookingCodeCount": 7, 
+         "flight": {
+          "carrier": "B6", 
+          "number": "89"
+         }, 
+         "leg": [
+          {
+           "origin": "JFK", 
+           "originTerminal": "5", 
+           "departureTime": "2015-09-06T17:00-04:00", 
+           "destinationTerminal": "2", 
+           "secure": true, 
+           "destination": "SAN", 
+           "kind": "qpxexpress#legInfo", 
+           "aircraft": "320", 
+           "onTimePerformance": 80, 
+           "arrivalTime": "2015-09-06T20:12-07:00", 
+           "duration": 372, 
+           "id": "LFHPtXI7SrOYGvgy", 
+           "mileage": 2439
+          }
+         ], 
+         "bookingCode": "M", 
+         "duration": 372, 
+         "id": "Gfreihq3fExVRL5P", 
+         "cabin": "COACH", 
+         "marriedSegmentGroup": "1"
+        }
+       ]
+      }
+     ], 
+     "id": "1EIl0Uzxxk8Teaj1rMzVjQ001", 
+     "pricing": [
+      {
+       "fare": [
+        {
+         "origin": "SAN", 
+         "basisCode": "BH7JUEN5", 
+         "kind": "qpxexpress#fareInfo", 
+         "destination": "NYC", 
+         "private": true, 
+         "carrier": "B6", 
+         "id": "ADhM9FNkgXhkCxgo5zETu+Uz8BhFPTWtNtAbQUwbZ2TRJHHwUihyv2RZj9/pLSEXA6SvWVerJ65hWqfa5ICtiivLRVuSBF/MycpsXQG/NjlusTSEHnJN2nlOMwx1wtCYIBHlj8wpQ6QbcwE"
+        }, 
+        {
+         "origin": "NYC", 
+         "basisCode": "MH4AUEN5", 
+         "kind": "qpxexpress#fareInfo", 
+         "destination": "SAN", 
+         "private": true, 
+         "carrier": "B6", 
+         "id": "AnPheiH94+b9xtpYiCDEXPKK29w1ADaE1URiIBphXEc/HzJjEO6eNcDOXiwaPunmEqq4j9TE2aTSYHsmDEgm8Gk4mZ70Q2b3m/9w5Hh1dpzOQgsVdzfqcbLjQ8nYtvcXgPPIR7T1CJz1dL/"
+        }
+       ], 
+       "saleTotal": "USD763.20", 
+       "kind": "qpxexpress#pricingInfo", 
+       "segmentPricing": [
+        {
+         "kind": "qpxexpress#segmentPricing", 
+         "fareId": "ADhM9FNkgXhkCxgo5zETu+Uz8BhFPTWtNtAbQUwbZ2TRJHHwUihyv2RZj9/pLSEXA6SvWVerJ65hWqfa5ICtiivLRVuSBF/MycpsXQG/NjlusTSEHnJN2nlOMwx1wtCYIBHlj8wpQ6QbcwE", 
+         "freeBaggageOption": [
+          {
+           "kind": "qpxexpress#freeBaggageAllowance", 
+           "bagDescriptor": [
+            {
+             "count": 1, 
+             "subcode": "0GO", 
+             "kind": "qpxexpress#bagDescriptor", 
+             "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+             "description": [
+              "Up to 50 lb/23 kg", 
+              "Up to 62 li/158 lcm"
+             ]
+            }
+           ], 
+           "pieces": 0
+          }
+         ], 
+         "segmentId": "GO2-xL3mgYXCLPei"
+        }, 
+        {
+         "kind": "qpxexpress#segmentPricing", 
+         "fareId": "AnPheiH94+b9xtpYiCDEXPKK29w1ADaE1URiIBphXEc/HzJjEO6eNcDOXiwaPunmEqq4j9TE2aTSYHsmDEgm8Gk4mZ70Q2b3m/9w5Hh1dpzOQgsVdzfqcbLjQ8nYtvcXgPPIR7T1CJz1dL/", 
+         "freeBaggageOption": [
+          {
+           "kind": "qpxexpress#freeBaggageAllowance", 
+           "bagDescriptor": [
+            {
+             "count": 1, 
+             "subcode": "0GO", 
+             "kind": "qpxexpress#bagDescriptor", 
+             "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+             "description": [
+              "Up to 50 lb/23 kg", 
+              "Up to 62 li/158 lcm"
+             ]
+            }
+           ], 
+           "pieces": 0
+          }
+         ], 
+         "segmentId": "Gfreihq3fExVRL5P"
+        }
+       ], 
+       "passengers": {
+        "kind": "qpxexpress#passengerCounts", 
+        "adultCount": 1
+       }, 
+       "ptc": "ADT", 
+       "tax": [
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "US", 
+         "country": "US", 
+         "salePrice": "USD51.28", 
+         "chargeType": "GOVERNMENT", 
+         "id": "US_001"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "AY", 
+         "country": "US", 
+         "salePrice": "USD11.20", 
+         "chargeType": "GOVERNMENT", 
+         "id": "AY_001"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "XF", 
+         "country": "US", 
+         "salePrice": "USD9.00", 
+         "chargeType": "GOVERNMENT", 
+         "id": "XF"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "ZP", 
+         "country": "US", 
+         "salePrice": "USD8.00", 
+         "chargeType": "GOVERNMENT", 
+         "id": "ZP"
+        }
+       ], 
+       "fareCalculation": "SAN B6 NYC 437.21BH7JUEN5 B6 SAN 246.51MH4AUEN5 USD 683.72 END ZP SAN JFK XT 51.28US 8.00ZP 11.20AY 9.00XF SAN4.50 JFK4.50", 
+       "saleFareTotal": "USD683.72", 
+       "baseFareTotal": "USD683.72", 
+       "saleTaxTotal": "USD79.48", 
+       "latestTicketingTime": "2015-08-22T23:59-04:00"
+      }
+     ]
+    }
+   ], 
+   "kind": "qpxexpress#tripOptions", 
+   "data": {
+    "city": [
+     {
+      "kind": "qpxexpress#cityData", 
+      "code": "NYC", 
+      "name": "New York"
+     }, 
+     {
+      "kind": "qpxexpress#cityData", 
+      "code": "SAN", 
+      "name": "San Diego"
+     }
+    ], 
+    "kind": "qpxexpress#data", 
+    "tax": [
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "ZP", 
+      "name": "US Flight Segment Tax"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "AY_001", 
+      "name": "US September 11th Security Fee"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "US_001", 
+      "name": "US Transportation Tax"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "XF", 
+      "name": "US Passenger Facility Charge"
+     }
+    ], 
+    "airport": [
+     {
+      "city": "NYC", 
+      "kind": "qpxexpress#airportData", 
+      "code": "JFK", 
+      "name": "New York John F Kennedy International"
+     }, 
+     {
+      "city": "SAN", 
+      "kind": "qpxexpress#airportData", 
+      "code": "SAN", 
+      "name": "San Diego Lindbergh Field"
+     }
+    ], 
+    "aircraft": [
+     {
+      "kind": "qpxexpress#aircraftData", 
+      "code": "320", 
+      "name": "Airbus A320"
+     }
+    ], 
+    "carrier": [
+     {
+      "kind": "qpxexpress#carrierData", 
+      "code": "B6", 
+      "name": "Jetblue Airways Corporation"
+     }
+    ]
+   }, 
+   "requestId": "Hxo2fFNuJgUHukC9t0MiiK"
+  }
+ }, 
+ "2": {
+  "kind": "qpxExpress#tripsSearch", 
+  "trips": {
+   "tripOption": [
+    {
+     "saleTotal": "USD518.20", 
+     "kind": "qpxexpress#tripOption", 
+     "slice": [
+      {
+       "duration": 307, 
+       "kind": "qpxexpress#sliceInfo", 
+       "segment": [
+        {
+         "kind": "qpxexpress#segmentInfo", 
+         "bookingCodeCount": 4, 
+         "flight": {
+          "carrier": "B6", 
+          "number": "90"
+         }, 
+         "leg": [
+          {
+           "origin": "SAN", 
+           "originTerminal": "2", 
+           "departureTime": "2015-09-10T21:00-07:00", 
+           "destinationTerminal": "5", 
+           "secure": true, 
+           "destination": "JFK", 
+           "kind": "qpxexpress#legInfo", 
+           "aircraft": "320", 
+           "onTimePerformance": 90, 
+           "arrivalTime": "2015-09-11T05:07-04:00", 
+           "duration": 307, 
+           "id": "LysPGgOGhKpq9TW0", 
+           "mileage": 2439
+          }
+         ], 
+         "bookingCode": "M", 
+         "duration": 307, 
+         "id": "GcgcLOItG+J90Jp4", 
+         "cabin": "COACH", 
+         "marriedSegmentGroup": "0"
+        }
+       ]
+      }, 
+      {
+       "duration": 367, 
+       "kind": "qpxexpress#sliceInfo", 
+       "segment": [
+        {
+         "kind": "qpxexpress#segmentInfo", 
+         "bookingCodeCount": 7, 
+         "flight": {
+          "carrier": "B6", 
+          "number": "89"
+         }, 
+         "leg": [
+          {
+           "origin": "JFK", 
+           "originTerminal": "5", 
+           "departureTime": "2015-09-13T16:59-04:00", 
+           "destinationTerminal": "2", 
+           "secure": true, 
+           "destination": "SAN", 
+           "kind": "qpxexpress#legInfo", 
+           "aircraft": "320", 
+           "onTimePerformance": 80, 
+           "arrivalTime": "2015-09-13T20:06-07:00", 
+           "duration": 367, 
+           "id": "LfoFqO+Gy3dZRfl9", 
+           "mileage": 2439
+          }
+         ], 
+         "bookingCode": "Z", 
+         "duration": 367, 
+         "id": "GlA09QQAkRJd48uO", 
+         "cabin": "COACH", 
+         "marriedSegmentGroup": "1"
+        }
+       ]
+      }
+     ], 
+     "id": "BkljqMFI3g7OsHki6elWC5001", 
+     "pricing": [
+      {
+       "fare": [
+        {
+         "origin": "SAN", 
+         "basisCode": "MH4JUEN5", 
+         "kind": "qpxexpress#fareInfo", 
+         "destination": "NYC", 
+         "private": true, 
+         "carrier": "B6", 
+         "id": "AybFLdo+TFyDXMPcODVjeFNqXZkRp2q1QyXQg5XGYpNMShbpk9ctkWaiVuglEloOpIz/jQ1I1ef8cBIB0PbkvbyCAAXX3vayoAZ/ksbTEj0ddstjQdWxG1bXlorU/ORsUAXaCXdZa/fnBn/"
+        }, 
+        {
+         "origin": "NYC", 
+         "basisCode": "ZH2AUEN5", 
+         "kind": "qpxexpress#fareInfo", 
+         "destination": "SAN", 
+         "private": true, 
+         "carrier": "B6", 
+         "id": "AsOKdjXNznrhfCN/hNqkk5nWKA2iZ4EEl7p/9bbp1IYVFJ+WwXw1RgwXHCe0LHzpc8oE+JUPKS762dw3SLz+BD8PX6Eov0ZJc5ToMfAenAYl9xo+8cj/zU5CgsD6L3N2BWvWgtOIIMQUvEE"
+        }
+       ], 
+       "saleTotal": "USD518.20", 
+       "kind": "qpxexpress#pricingInfo", 
+       "segmentPricing": [
+        {
+         "kind": "qpxexpress#segmentPricing", 
+         "fareId": "AsOKdjXNznrhfCN/hNqkk5nWKA2iZ4EEl7p/9bbp1IYVFJ+WwXw1RgwXHCe0LHzpc8oE+JUPKS762dw3SLz+BD8PX6Eov0ZJc5ToMfAenAYl9xo+8cj/zU5CgsD6L3N2BWvWgtOIIMQUvEE", 
+         "freeBaggageOption": [
+          {
+           "kind": "qpxexpress#freeBaggageAllowance", 
+           "bagDescriptor": [
+            {
+             "count": 1, 
+             "subcode": "0GO", 
+             "kind": "qpxexpress#bagDescriptor", 
+             "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+             "description": [
+              "Up to 50 lb/23 kg", 
+              "Up to 62 li/158 lcm"
+             ]
+            }
+           ], 
+           "pieces": 0
+          }
+         ], 
+         "segmentId": "GlA09QQAkRJd48uO"
+        }, 
+        {
+         "kind": "qpxexpress#segmentPricing", 
+         "fareId": "AybFLdo+TFyDXMPcODVjeFNqXZkRp2q1QyXQg5XGYpNMShbpk9ctkWaiVuglEloOpIz/jQ1I1ef8cBIB0PbkvbyCAAXX3vayoAZ/ksbTEj0ddstjQdWxG1bXlorU/ORsUAXaCXdZa/fnBn/", 
+         "freeBaggageOption": [
+          {
+           "kind": "qpxexpress#freeBaggageAllowance", 
+           "bagDescriptor": [
+            {
+             "count": 1, 
+             "subcode": "0GO", 
+             "kind": "qpxexpress#bagDescriptor", 
+             "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+             "description": [
+              "Up to 50 lb/23 kg", 
+              "Up to 62 li/158 lcm"
+             ]
+            }
+           ], 
+           "pieces": 0
+          }
+         ], 
+         "segmentId": "GcgcLOItG+J90Jp4"
+        }
+       ], 
+       "passengers": {
+        "kind": "qpxexpress#passengerCounts", 
+        "adultCount": 1
+       }, 
+       "ptc": "ADT", 
+       "tax": [
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "US", 
+         "country": "US", 
+         "salePrice": "USD34.19", 
+         "chargeType": "GOVERNMENT", 
+         "id": "US_001"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "AY", 
+         "country": "US", 
+         "salePrice": "USD11.20", 
+         "chargeType": "GOVERNMENT", 
+         "id": "AY_001"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "XF", 
+         "country": "US", 
+         "salePrice": "USD9.00", 
+         "chargeType": "GOVERNMENT", 
+         "id": "XF"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "ZP", 
+         "country": "US", 
+         "salePrice": "USD8.00", 
+         "chargeType": "GOVERNMENT", 
+         "id": "ZP"
+        }
+       ], 
+       "fareCalculation": "SAN B6 NYC 246.51MH4JUEN5 B6 SAN 209.30ZH2AUEN5 USD 455.81 END ZP SAN JFK XT 34.19US 8.00ZP 11.20AY 9.00XF SAN4.50 JFK4.50", 
+       "saleFareTotal": "USD455.81", 
+       "baseFareTotal": "USD455.81", 
+       "saleTaxTotal": "USD62.39", 
+       "latestTicketingTime": "2015-08-22T23:59-04:00"
+      }
+     ]
+    }
+   ], 
+   "kind": "qpxexpress#tripOptions", 
+   "data": {
+    "city": [
+     {
+      "kind": "qpxexpress#cityData", 
+      "code": "NYC", 
+      "name": "New York"
+     }, 
+     {
+      "kind": "qpxexpress#cityData", 
+      "code": "SAN", 
+      "name": "San Diego"
+     }
+    ], 
+    "kind": "qpxexpress#data", 
+    "tax": [
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "ZP", 
+      "name": "US Flight Segment Tax"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "AY_001", 
+      "name": "US September 11th Security Fee"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "US_001", 
+      "name": "US Transportation Tax"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "XF", 
+      "name": "US Passenger Facility Charge"
+     }
+    ], 
+    "airport": [
+     {
+      "city": "NYC", 
+      "kind": "qpxexpress#airportData", 
+      "code": "JFK", 
+      "name": "New York John F Kennedy International"
+     }, 
+     {
+      "city": "SAN", 
+      "kind": "qpxexpress#airportData", 
+      "code": "SAN", 
+      "name": "San Diego Lindbergh Field"
+     }
+    ], 
+    "aircraft": [
+     {
+      "kind": "qpxexpress#aircraftData", 
+      "code": "320", 
+      "name": "Airbus A320"
+     }
+    ], 
+    "carrier": [
+     {
+      "kind": "qpxexpress#carrierData", 
+      "code": "B6", 
+      "name": "Jetblue Airways Corporation"
+     }
+    ]
+   }, 
+   "requestId": "9Z2gWA6K6Q594OCkL0MiiK"
+  }
+ }, 
+ "3": {
+  "kind": "qpxExpress#tripsSearch", 
+  "trips": {
+   "tripOption": [
+    {
+     "saleTotal": "USD495.20", 
+     "kind": "qpxexpress#tripOption", 
+     "slice": [
+      {
+       "duration": 307, 
+       "kind": "qpxexpress#sliceInfo", 
+       "segment": [
+        {
+         "kind": "qpxexpress#segmentInfo", 
+         "bookingCodeCount": 7, 
+         "flight": {
+          "carrier": "B6", 
+          "number": "90"
+         }, 
+         "leg": [
+          {
+           "origin": "SAN", 
+           "originTerminal": "2", 
+           "departureTime": "2015-09-17T21:00-07:00", 
+           "destinationTerminal": "5", 
+           "secure": true, 
+           "destination": "JFK", 
+           "kind": "qpxexpress#legInfo", 
+           "aircraft": "320", 
+           "onTimePerformance": 90, 
+           "arrivalTime": "2015-09-18T05:07-04:00", 
+           "duration": 307, 
+           "id": "LDuAfeLJaEeB+WTz", 
+           "mileage": 2439
+          }
+         ], 
+         "bookingCode": "O", 
+         "duration": 307, 
+         "id": "GJCRoRJbsd6iQDEf", 
+         "cabin": "COACH", 
+         "marriedSegmentGroup": "0"
+        }
+       ]
+      }, 
+      {
+       "duration": 367, 
+       "kind": "qpxexpress#sliceInfo", 
+       "segment": [
+        {
+         "kind": "qpxexpress#segmentInfo", 
+         "bookingCodeCount": 4, 
+         "flight": {
+          "carrier": "B6", 
+          "number": "89"
+         }, 
+         "leg": [
+          {
+           "origin": "JFK", 
+           "originTerminal": "5", 
+           "departureTime": "2015-09-20T16:59-04:00", 
+           "destinationTerminal": "2", 
+           "secure": true, 
+           "destination": "SAN", 
+           "kind": "qpxexpress#legInfo", 
+           "aircraft": "320", 
+           "onTimePerformance": 80, 
+           "arrivalTime": "2015-09-20T20:06-07:00", 
+           "duration": 367, 
+           "id": "LYJK3MGck4IjgFPi", 
+           "mileage": 2439
+          }
+         ], 
+         "bookingCode": "M", 
+         "duration": 367, 
+         "id": "Gd7+yK1TAzvLLGzV", 
+         "cabin": "COACH", 
+         "marriedSegmentGroup": "1"
+        }
+       ]
+      }
+     ], 
+     "id": "6QmA5B6ANyKT00TV6z8FmH001", 
+     "pricing": [
+      {
+       "fare": [
+        {
+         "origin": "SAN", 
+         "basisCode": "OH2QBEN5", 
+         "kind": "qpxexpress#fareInfo", 
+         "destination": "NYC", 
+         "private": true, 
+         "carrier": "B6", 
+         "id": "AQcgEjrFHvfpCybQ8/0c9Oo5NvvR8U7yHo+mul1dCWu0VHU4WSY4diuxsLoVPQ/ZDbqk/t447JH2ykrYyf8DdmcoZUyvVIIg8hGTPeIVTv2zPvhRwJ122mWBpdAUuSdjLvu82xFfj6ZHWFo"
+        }, 
+        {
+         "origin": "NYC", 
+         "basisCode": "MH4JUEN5", 
+         "kind": "qpxexpress#fareInfo", 
+         "destination": "SAN", 
+         "private": true, 
+         "carrier": "B6", 
+         "id": "AQSSAB0iruPrj0XkkFeIhpOvdEjKZhclRI9GQgFbVA9c6y0vwkx1YcNukIUJrWhZq1BL9FDualmBLo2zWIquBy0YkKoNbXjY3nl16099k1FV4JgeU4vNClCCdBzZKHh3BGjpHRidw8WHp0/"
+        }
+       ], 
+       "saleTotal": "USD495.20", 
+       "kind": "qpxexpress#pricingInfo", 
+       "segmentPricing": [
+        {
+         "kind": "qpxexpress#segmentPricing", 
+         "fareId": "AQcgEjrFHvfpCybQ8/0c9Oo5NvvR8U7yHo+mul1dCWu0VHU4WSY4diuxsLoVPQ/ZDbqk/t447JH2ykrYyf8DdmcoZUyvVIIg8hGTPeIVTv2zPvhRwJ122mWBpdAUuSdjLvu82xFfj6ZHWFo", 
+         "freeBaggageOption": [
+          {
+           "kind": "qpxexpress#freeBaggageAllowance", 
+           "bagDescriptor": [
+            {
+             "count": 1, 
+             "subcode": "0GO", 
+             "kind": "qpxexpress#bagDescriptor", 
+             "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+             "description": [
+              "Up to 50 lb/23 kg", 
+              "Up to 62 li/158 lcm"
+             ]
+            }
+           ], 
+           "pieces": 0
+          }
+         ], 
+         "segmentId": "GJCRoRJbsd6iQDEf"
+        }, 
+        {
+         "kind": "qpxexpress#segmentPricing", 
+         "fareId": "AQSSAB0iruPrj0XkkFeIhpOvdEjKZhclRI9GQgFbVA9c6y0vwkx1YcNukIUJrWhZq1BL9FDualmBLo2zWIquBy0YkKoNbXjY3nl16099k1FV4JgeU4vNClCCdBzZKHh3BGjpHRidw8WHp0/", 
+         "freeBaggageOption": [
+          {
+           "kind": "qpxexpress#freeBaggageAllowance", 
+           "bagDescriptor": [
+            {
+             "count": 1, 
+             "subcode": "0GO", 
+             "kind": "qpxexpress#bagDescriptor", 
+             "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+             "description": [
+              "Up to 50 lb/23 kg", 
+              "Up to 62 li/158 lcm"
+             ]
+            }
+           ], 
+           "pieces": 0
+          }
+         ], 
+         "segmentId": "Gd7+yK1TAzvLLGzV"
+        }
+       ], 
+       "passengers": {
+        "kind": "qpxexpress#passengerCounts", 
+        "adultCount": 1
+       }, 
+       "ptc": "ADT", 
+       "tax": [
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "US", 
+         "country": "US", 
+         "salePrice": "USD32.58", 
+         "chargeType": "GOVERNMENT", 
+         "id": "US_001"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "AY", 
+         "country": "US", 
+         "salePrice": "USD11.20", 
+         "chargeType": "GOVERNMENT", 
+         "id": "AY_001"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "XF", 
+         "country": "US", 
+         "salePrice": "USD9.00", 
+         "chargeType": "GOVERNMENT", 
+         "id": "XF"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "ZP", 
+         "country": "US", 
+         "salePrice": "USD8.00", 
+         "chargeType": "GOVERNMENT", 
+         "id": "ZP"
+        }
+       ], 
+       "fareCalculation": "SAN B6 NYC 187.91OH2QBEN5 B6 SAN 246.51MH4JUEN5 USD 434.42 END ZP SAN JFK XT 32.58US 8.00ZP 11.20AY 9.00XF SAN4.50 JFK4.50", 
+       "saleFareTotal": "USD434.42", 
+       "baseFareTotal": "USD434.42", 
+       "saleTaxTotal": "USD60.78", 
+       "latestTicketingTime": "2015-08-22T23:59-04:00"
+      }
+     ]
+    }
+   ], 
+   "kind": "qpxexpress#tripOptions", 
+   "data": {
+    "city": [
+     {
+      "kind": "qpxexpress#cityData", 
+      "code": "NYC", 
+      "name": "New York"
+     }, 
+     {
+      "kind": "qpxexpress#cityData", 
+      "code": "SAN", 
+      "name": "San Diego"
+     }
+    ], 
+    "kind": "qpxexpress#data", 
+    "tax": [
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "ZP", 
+      "name": "US Flight Segment Tax"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "AY_001", 
+      "name": "US September 11th Security Fee"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "US_001", 
+      "name": "US Transportation Tax"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "XF", 
+      "name": "US Passenger Facility Charge"
+     }
+    ], 
+    "airport": [
+     {
+      "city": "NYC", 
+      "kind": "qpxexpress#airportData", 
+      "code": "JFK", 
+      "name": "New York John F Kennedy International"
+     }, 
+     {
+      "city": "SAN", 
+      "kind": "qpxexpress#airportData", 
+      "code": "SAN", 
+      "name": "San Diego Lindbergh Field"
+     }
+    ], 
+    "aircraft": [
+     {
+      "kind": "qpxexpress#aircraftData", 
+      "code": "320", 
+      "name": "Airbus A320"
+     }
+    ], 
+    "carrier": [
+     {
+      "kind": "qpxexpress#carrierData", 
+      "code": "B6", 
+      "name": "Jetblue Airways Corporation"
+     }
+    ]
+   }, 
+   "requestId": "dwzQGfk3uyXUJyAqc0MiiK"
+  }
+ }, 
+ "4": {
+  "kind": "qpxExpress#tripsSearch", 
+  "trips": {
+   "tripOption": [
+    {
+     "saleTotal": "USD495.20", 
+     "kind": "qpxexpress#tripOption", 
+     "slice": [
+      {
+       "duration": 306, 
+       "kind": "qpxexpress#sliceInfo", 
+       "segment": [
+        {
+         "kind": "qpxexpress#segmentInfo", 
+         "bookingCodeCount": 7, 
+         "flight": {
+          "carrier": "B6", 
+          "number": "90"
+         }, 
+         "leg": [
+          {
+           "origin": "SAN", 
+           "originTerminal": "2", 
+           "departureTime": "2015-09-24T21:00-07:00", 
+           "destinationTerminal": "5", 
+           "secure": true, 
+           "destination": "JFK", 
+           "kind": "qpxexpress#legInfo", 
+           "aircraft": "320", 
+           "onTimePerformance": 90, 
+           "arrivalTime": "2015-09-25T05:06-04:00", 
+           "duration": 306, 
+           "id": "Lu7ntDbP2piuJEHR", 
+           "mileage": 2439
+          }
+         ], 
+         "bookingCode": "O", 
+         "duration": 306, 
+         "id": "GSPQYBoH+jUE52yT", 
+         "cabin": "COACH", 
+         "marriedSegmentGroup": "0"
+        }
+       ]
+      }, 
+      {
+       "duration": 362, 
+       "kind": "qpxexpress#sliceInfo", 
+       "segment": [
+        {
+         "kind": "qpxexpress#segmentInfo", 
+         "bookingCodeCount": 1, 
+         "flight": {
+          "carrier": "B6", 
+          "number": "89"
+         }, 
+         "leg": [
+          {
+           "origin": "JFK", 
+           "originTerminal": "5", 
+           "departureTime": "2015-09-27T16:59-04:00", 
+           "destinationTerminal": "2", 
+           "secure": true, 
+           "destination": "SAN", 
+           "kind": "qpxexpress#legInfo", 
+           "aircraft": "320", 
+           "onTimePerformance": 80, 
+           "arrivalTime": "2015-09-27T20:01-07:00", 
+           "duration": 362, 
+           "id": "LDlhnIiFwRi52KME", 
+           "mileage": 2439
+          }
+         ], 
+         "bookingCode": "M", 
+         "duration": 362, 
+         "id": "G1jFFEiT7NlQZU84", 
+         "cabin": "COACH", 
+         "marriedSegmentGroup": "1"
+        }
+       ]
+      }
+     ], 
+     "id": "QfYLXstwl1ITyCsXRQA5R8001", 
+     "pricing": [
+      {
+       "fare": [
+        {
+         "origin": "SAN", 
+         "basisCode": "OH2QBEN5", 
+         "kind": "qpxexpress#fareInfo", 
+         "destination": "NYC", 
+         "private": true, 
+         "carrier": "B6", 
+         "id": "ACTMTG34Xf4dxE7aEEIywMIwPODNnhStVhW4O12S4k3kCAPA47AvzOYSP2X7AzJ80Y6rZoEXS4sdPg4xWR8flyYkzZEY82B1/Kvq0OMndQROToRaO9TBMBEbwNgDNUH4+pqrAvAYPy4TtAE"
+        }, 
+        {
+         "origin": "NYC", 
+         "basisCode": "MH4JUEN5", 
+         "kind": "qpxexpress#fareInfo", 
+         "destination": "SAN", 
+         "private": true, 
+         "carrier": "B6", 
+         "id": "AybFLdo+TFyDXMPcODVjeFNqXZkRp2q1QyXQg5XGYpNMShbpk9ctkWaiVuglEloOpIz/jQ1I1ef8cBIB0PbkvbyCAAXX3vayoAZ/ksbTEj0ddstjQdWxG1bXlorU/ORsUAXaCXdZa/fnBn/"
+        }
+       ], 
+       "saleTotal": "USD495.20", 
+       "kind": "qpxexpress#pricingInfo", 
+       "segmentPricing": [
+        {
+         "kind": "qpxexpress#segmentPricing", 
+         "fareId": "ACTMTG34Xf4dxE7aEEIywMIwPODNnhStVhW4O12S4k3kCAPA47AvzOYSP2X7AzJ80Y6rZoEXS4sdPg4xWR8flyYkzZEY82B1/Kvq0OMndQROToRaO9TBMBEbwNgDNUH4+pqrAvAYPy4TtAE", 
+         "freeBaggageOption": [
+          {
+           "kind": "qpxexpress#freeBaggageAllowance", 
+           "bagDescriptor": [
+            {
+             "count": 1, 
+             "subcode": "0GO", 
+             "kind": "qpxexpress#bagDescriptor", 
+             "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+             "description": [
+              "Up to 50 lb/23 kg", 
+              "Up to 62 li/158 lcm"
+             ]
+            }
+           ], 
+           "pieces": 0
+          }
+         ], 
+         "segmentId": "GSPQYBoH+jUE52yT"
+        }, 
+        {
+         "kind": "qpxexpress#segmentPricing", 
+         "fareId": "AybFLdo+TFyDXMPcODVjeFNqXZkRp2q1QyXQg5XGYpNMShbpk9ctkWaiVuglEloOpIz/jQ1I1ef8cBIB0PbkvbyCAAXX3vayoAZ/ksbTEj0ddstjQdWxG1bXlorU/ORsUAXaCXdZa/fnBn/", 
+         "freeBaggageOption": [
+          {
+           "kind": "qpxexpress#freeBaggageAllowance", 
+           "bagDescriptor": [
+            {
+             "count": 1, 
+             "subcode": "0GO", 
+             "kind": "qpxexpress#bagDescriptor", 
+             "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+             "description": [
+              "Up to 50 lb/23 kg", 
+              "Up to 62 li/158 lcm"
+             ]
+            }
+           ], 
+           "pieces": 0
+          }
+         ], 
+         "segmentId": "G1jFFEiT7NlQZU84"
+        }
+       ], 
+       "passengers": {
+        "kind": "qpxexpress#passengerCounts", 
+        "adultCount": 1
+       }, 
+       "ptc": "ADT", 
+       "tax": [
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "US", 
+         "country": "US", 
+         "salePrice": "USD32.58", 
+         "chargeType": "GOVERNMENT", 
+         "id": "US_001"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "AY", 
+         "country": "US", 
+         "salePrice": "USD11.20", 
+         "chargeType": "GOVERNMENT", 
+         "id": "AY_001"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "XF", 
+         "country": "US", 
+         "salePrice": "USD9.00", 
+         "chargeType": "GOVERNMENT", 
+         "id": "XF"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "ZP", 
+         "country": "US", 
+         "salePrice": "USD8.00", 
+         "chargeType": "GOVERNMENT", 
+         "id": "ZP"
+        }
+       ], 
+       "fareCalculation": "SAN B6 NYC 187.91OH2QBEN5 B6 SAN 246.51MH4JUEN5 USD 434.42 END ZP SAN JFK XT 32.58US 8.00ZP 11.20AY 9.00XF SAN4.50 JFK4.50", 
+       "saleFareTotal": "USD434.42", 
+       "baseFareTotal": "USD434.42", 
+       "saleTaxTotal": "USD60.78", 
+       "latestTicketingTime": "2015-08-22T23:59-04:00"
+      }
+     ]
+    }
+   ], 
+   "kind": "qpxexpress#tripOptions", 
+   "data": {
+    "city": [
+     {
+      "kind": "qpxexpress#cityData", 
+      "code": "NYC", 
+      "name": "New York"
+     }, 
+     {
+      "kind": "qpxexpress#cityData", 
+      "code": "SAN", 
+      "name": "San Diego"
+     }
+    ], 
+    "kind": "qpxexpress#data", 
+    "tax": [
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "ZP", 
+      "name": "US Flight Segment Tax"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "AY_001", 
+      "name": "US September 11th Security Fee"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "US_001", 
+      "name": "US Transportation Tax"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "XF", 
+      "name": "US Passenger Facility Charge"
+     }
+    ], 
+    "airport": [
+     {
+      "city": "NYC", 
+      "kind": "qpxexpress#airportData", 
+      "code": "JFK", 
+      "name": "New York John F Kennedy International"
+     }, 
+     {
+      "city": "SAN", 
+      "kind": "qpxexpress#airportData", 
+      "code": "SAN", 
+      "name": "San Diego Lindbergh Field"
+     }
+    ], 
+    "aircraft": [
+     {
+      "kind": "qpxexpress#aircraftData", 
+      "code": "320", 
+      "name": "Airbus A320"
+     }
+    ], 
+    "carrier": [
+     {
+      "kind": "qpxexpress#carrierData", 
+      "code": "B6", 
+      "name": "Jetblue Airways Corporation"
+     }
+    ]
+   }, 
+   "requestId": "7E79zm2mFI8ELuoL60MiiK"
+  }
+ }, 
+ "5": {
+  "kind": "qpxExpress#tripsSearch", 
+  "trips": {
+   "tripOption": [
+    {
+     "saleTotal": "USD455.20", 
+     "kind": "qpxexpress#tripOption", 
+     "slice": [
+      {
+       "duration": 306, 
+       "kind": "qpxexpress#sliceInfo", 
+       "segment": [
+        {
+         "kind": "qpxexpress#segmentInfo", 
+         "bookingCodeCount": 7, 
+         "flight": {
+          "carrier": "B6", 
+          "number": "90"
+         }, 
+         "leg": [
+          {
+           "origin": "SAN", 
+           "originTerminal": "2", 
+           "departureTime": "2015-10-01T21:00-07:00", 
+           "destinationTerminal": "5", 
+           "secure": true, 
+           "destination": "JFK", 
+           "kind": "qpxexpress#legInfo", 
+           "aircraft": "320", 
+           "onTimePerformance": 90, 
+           "arrivalTime": "2015-10-02T05:06-04:00", 
+           "duration": 306, 
+           "id": "Lf1Y3CSsFgJuwkHg", 
+           "mileage": 2439
+          }
+         ], 
+         "bookingCode": "O", 
+         "duration": 306, 
+         "id": "G1QV0Ux9j3j6Qrpk", 
+         "cabin": "COACH", 
+         "marriedSegmentGroup": "0"
+        }
+       ]
+      }, 
+      {
+       "duration": 362, 
+       "kind": "qpxexpress#sliceInfo", 
+       "segment": [
+        {
+         "kind": "qpxexpress#segmentInfo", 
+         "bookingCodeCount": 7, 
+         "flight": {
+          "carrier": "B6", 
+          "number": "89"
+         }, 
+         "leg": [
+          {
+           "origin": "JFK", 
+           "originTerminal": "5", 
+           "departureTime": "2015-10-04T16:59-04:00", 
+           "destinationTerminal": "2", 
+           "secure": true, 
+           "destination": "SAN", 
+           "kind": "qpxexpress#legInfo", 
+           "aircraft": "320", 
+           "onTimePerformance": 80, 
+           "arrivalTime": "2015-10-04T20:01-07:00", 
+           "duration": 362, 
+           "id": "LD5wiPxU4sZktxUy", 
+           "mileage": 2439
+          }
+         ], 
+         "bookingCode": "Z", 
+         "duration": 362, 
+         "id": "GyYKBsaawX-JZ0zO", 
+         "cabin": "COACH", 
+         "marriedSegmentGroup": "1"
+        }
+       ]
+      }
+     ], 
+     "id": "JWEne1bsToVPV7SbeCtM3G001", 
+     "pricing": [
+      {
+       "fare": [
+        {
+         "origin": "SAN", 
+         "basisCode": "OH2QBEN5", 
+         "kind": "qpxexpress#fareInfo", 
+         "destination": "NYC", 
+         "private": true, 
+         "carrier": "B6", 
+         "id": "ACTMTG34Xf4dxE7aEEIywMIwPODNnhStVhW4O12S4k3kCAPA47AvzOYSP2X7AzJ80Y6rZoEXS4sdPg4xWR8flyYkzZEY82B1/Kvq0OMndQROToRaO9TBMBEbwNgDNUH4+pqrAvAYPy4TtAE"
+        }, 
+        {
+         "origin": "NYC", 
+         "basisCode": "ZH2AUEN5", 
+         "kind": "qpxexpress#fareInfo", 
+         "destination": "SAN", 
+         "private": true, 
+         "carrier": "B6", 
+         "id": "AsOKdjXNznrhfCN/hNqkk5nWKA2iZ4EEl7p/9bbp1IYVFJ+WwXw1RgwXHCe0LHzpc8oE+JUPKS762dw3SLz+BD8PX6Eov0ZJc5ToMfAenAYl9xo+8cj/zU5CgsD6L3N2BWvWgtOIIMQUvEE"
+        }
+       ], 
+       "saleTotal": "USD455.20", 
+       "kind": "qpxexpress#pricingInfo", 
+       "segmentPricing": [
+        {
+         "kind": "qpxexpress#segmentPricing", 
+         "fareId": "AsOKdjXNznrhfCN/hNqkk5nWKA2iZ4EEl7p/9bbp1IYVFJ+WwXw1RgwXHCe0LHzpc8oE+JUPKS762dw3SLz+BD8PX6Eov0ZJc5ToMfAenAYl9xo+8cj/zU5CgsD6L3N2BWvWgtOIIMQUvEE", 
+         "freeBaggageOption": [
+          {
+           "kind": "qpxexpress#freeBaggageAllowance", 
+           "bagDescriptor": [
+            {
+             "count": 1, 
+             "subcode": "0GO", 
+             "kind": "qpxexpress#bagDescriptor", 
+             "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+             "description": [
+              "Up to 50 lb/23 kg", 
+              "Up to 62 li/158 lcm"
+             ]
+            }
+           ], 
+           "pieces": 0
+          }
+         ], 
+         "segmentId": "GyYKBsaawX-JZ0zO"
+        }, 
+        {
+         "kind": "qpxexpress#segmentPricing", 
+         "fareId": "ACTMTG34Xf4dxE7aEEIywMIwPODNnhStVhW4O12S4k3kCAPA47AvzOYSP2X7AzJ80Y6rZoEXS4sdPg4xWR8flyYkzZEY82B1/Kvq0OMndQROToRaO9TBMBEbwNgDNUH4+pqrAvAYPy4TtAE", 
+         "freeBaggageOption": [
+          {
+           "kind": "qpxexpress#freeBaggageAllowance", 
+           "bagDescriptor": [
+            {
+             "count": 1, 
+             "subcode": "0GO", 
+             "kind": "qpxexpress#bagDescriptor", 
+             "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+             "description": [
+              "Up to 50 lb/23 kg", 
+              "Up to 62 li/158 lcm"
+             ]
+            }
+           ], 
+           "pieces": 0
+          }
+         ], 
+         "segmentId": "G1QV0Ux9j3j6Qrpk"
+        }
+       ], 
+       "passengers": {
+        "kind": "qpxexpress#passengerCounts", 
+        "adultCount": 1
+       }, 
+       "ptc": "ADT", 
+       "tax": [
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "US", 
+         "country": "US", 
+         "salePrice": "USD29.79", 
+         "chargeType": "GOVERNMENT", 
+         "id": "US_001"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "AY", 
+         "country": "US", 
+         "salePrice": "USD11.20", 
+         "chargeType": "GOVERNMENT", 
+         "id": "AY_001"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "XF", 
+         "country": "US", 
+         "salePrice": "USD9.00", 
+         "chargeType": "GOVERNMENT", 
+         "id": "XF"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "ZP", 
+         "country": "US", 
+         "salePrice": "USD8.00", 
+         "chargeType": "GOVERNMENT", 
+         "id": "ZP"
+        }
+       ], 
+       "fareCalculation": "SAN B6 NYC 187.91OH2QBEN5 B6 SAN 209.30ZH2AUEN5 USD 397.21 END ZP SAN JFK XT 29.79US 8.00ZP 11.20AY 9.00XF SAN4.50 JFK4.50", 
+       "saleFareTotal": "USD397.21", 
+       "baseFareTotal": "USD397.21", 
+       "saleTaxTotal": "USD57.99", 
+       "latestTicketingTime": "2015-08-22T23:59-04:00"
+      }
+     ]
+    }
+   ], 
+   "kind": "qpxexpress#tripOptions", 
+   "data": {
+    "city": [
+     {
+      "kind": "qpxexpress#cityData", 
+      "code": "NYC", 
+      "name": "New York"
+     }, 
+     {
+      "kind": "qpxexpress#cityData", 
+      "code": "SAN", 
+      "name": "San Diego"
+     }
+    ], 
+    "kind": "qpxexpress#data", 
+    "tax": [
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "ZP", 
+      "name": "US Flight Segment Tax"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "AY_001", 
+      "name": "US September 11th Security Fee"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "US_001", 
+      "name": "US Transportation Tax"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "XF", 
+      "name": "US Passenger Facility Charge"
+     }
+    ], 
+    "airport": [
+     {
+      "city": "NYC", 
+      "kind": "qpxexpress#airportData", 
+      "code": "JFK", 
+      "name": "New York John F Kennedy International"
+     }, 
+     {
+      "city": "SAN", 
+      "kind": "qpxexpress#airportData", 
+      "code": "SAN", 
+      "name": "San Diego Lindbergh Field"
+     }
+    ], 
+    "aircraft": [
+     {
+      "kind": "qpxexpress#aircraftData", 
+      "code": "320", 
+      "name": "Airbus A320"
+     }
+    ], 
+    "carrier": [
+     {
+      "kind": "qpxexpress#carrierData", 
+      "code": "B6", 
+      "name": "Jetblue Airways Corporation"
+     }
+    ]
+   }, 
+   "requestId": "7CouQHiQca8nmYZtv0MiiL"
+  }
+ }, 
+ "6": {
+  "kind": "qpxExpress#tripsSearch", 
+  "trips": {
+   "tripOption": [
+    {
+     "saleTotal": "USD455.20", 
+     "kind": "qpxexpress#tripOption", 
+     "slice": [
+      {
+       "duration": 306, 
+       "kind": "qpxexpress#sliceInfo", 
+       "segment": [
+        {
+         "kind": "qpxexpress#segmentInfo", 
+         "bookingCodeCount": 4, 
+         "flight": {
+          "carrier": "B6", 
+          "number": "90"
+         }, 
+         "leg": [
+          {
+           "origin": "SAN", 
+           "originTerminal": "2", 
+           "departureTime": "2015-10-08T21:00-07:00", 
+           "destinationTerminal": "5", 
+           "secure": true, 
+           "destination": "JFK", 
+           "kind": "qpxexpress#legInfo", 
+           "aircraft": "320", 
+           "onTimePerformance": 90, 
+           "arrivalTime": "2015-10-09T05:06-04:00", 
+           "duration": 306, 
+           "id": "LZVX0sZLt3WGSvK-", 
+           "mileage": 2439
+          }
+         ], 
+         "bookingCode": "O", 
+         "duration": 306, 
+         "id": "GzUk6+gLUDJqTMdk", 
+         "cabin": "COACH", 
+         "marriedSegmentGroup": "0"
+        }
+       ]
+      }, 
+      {
+       "duration": 362, 
+       "kind": "qpxexpress#sliceInfo", 
+       "segment": [
+        {
+         "kind": "qpxexpress#segmentInfo", 
+         "bookingCodeCount": 4, 
+         "flight": {
+          "carrier": "B6", 
+          "number": "89"
+         }, 
+         "leg": [
+          {
+           "origin": "JFK", 
+           "originTerminal": "5", 
+           "departureTime": "2015-10-11T16:59-04:00", 
+           "destinationTerminal": "2", 
+           "secure": true, 
+           "destination": "SAN", 
+           "kind": "qpxexpress#legInfo", 
+           "aircraft": "320", 
+           "onTimePerformance": 80, 
+           "arrivalTime": "2015-10-11T20:01-07:00", 
+           "duration": 362, 
+           "id": "LKNF8nQN6uukKmtO", 
+           "mileage": 2439
+          }
+         ], 
+         "bookingCode": "Z", 
+         "duration": 362, 
+         "id": "GXUXzE1te31MRvma", 
+         "cabin": "COACH", 
+         "marriedSegmentGroup": "1"
+        }
+       ]
+      }
+     ], 
+     "id": "S5eHkorSNC9TrxDy4MnWbH001", 
+     "pricing": [
+      {
+       "fare": [
+        {
+         "origin": "SAN", 
+         "basisCode": "OH2QBEN5", 
+         "kind": "qpxexpress#fareInfo", 
+         "destination": "NYC", 
+         "private": true, 
+         "carrier": "B6", 
+         "id": "ACTMTG34Xf4dxE7aEEIywMIwPODNnhStVhW4O12S4k3kCAPA47AvzOYSP2X7AzJ80Y6rZoEXS4sdPg4xWR8flyYkzZEY82B1/Kvq0OMndQROToRaO9TBMBEbwNgDNUH4+pqrAvAYPy4TtAE"
+        }, 
+        {
+         "origin": "NYC", 
+         "basisCode": "ZH2AUEN5", 
+         "kind": "qpxexpress#fareInfo", 
+         "destination": "SAN", 
+         "private": true, 
+         "carrier": "B6", 
+         "id": "AsOKdjXNznrhfCN/hNqkk5nWKA2iZ4EEl7p/9bbp1IYVFJ+WwXw1RgwXHCe0LHzpc8oE+JUPKS762dw3SLz+BD8PX6Eov0ZJc5ToMfAenAYl9xo+8cj/zU5CgsD6L3N2BWvWgtOIIMQUvEE"
+        }
+       ], 
+       "saleTotal": "USD455.20", 
+       "kind": "qpxexpress#pricingInfo", 
+       "segmentPricing": [
+        {
+         "kind": "qpxexpress#segmentPricing", 
+         "fareId": "ACTMTG34Xf4dxE7aEEIywMIwPODNnhStVhW4O12S4k3kCAPA47AvzOYSP2X7AzJ80Y6rZoEXS4sdPg4xWR8flyYkzZEY82B1/Kvq0OMndQROToRaO9TBMBEbwNgDNUH4+pqrAvAYPy4TtAE", 
+         "freeBaggageOption": [
+          {
+           "kind": "qpxexpress#freeBaggageAllowance", 
+           "bagDescriptor": [
+            {
+             "count": 1, 
+             "subcode": "0GO", 
+             "kind": "qpxexpress#bagDescriptor", 
+             "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+             "description": [
+              "Up to 50 lb/23 kg", 
+              "Up to 62 li/158 lcm"
+             ]
+            }
+           ], 
+           "pieces": 0
+          }
+         ], 
+         "segmentId": "GzUk6+gLUDJqTMdk"
+        }, 
+        {
+         "kind": "qpxexpress#segmentPricing", 
+         "fareId": "AsOKdjXNznrhfCN/hNqkk5nWKA2iZ4EEl7p/9bbp1IYVFJ+WwXw1RgwXHCe0LHzpc8oE+JUPKS762dw3SLz+BD8PX6Eov0ZJc5ToMfAenAYl9xo+8cj/zU5CgsD6L3N2BWvWgtOIIMQUvEE", 
+         "freeBaggageOption": [
+          {
+           "kind": "qpxexpress#freeBaggageAllowance", 
+           "bagDescriptor": [
+            {
+             "count": 1, 
+             "subcode": "0GO", 
+             "kind": "qpxexpress#bagDescriptor", 
+             "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+             "description": [
+              "Up to 50 lb/23 kg", 
+              "Up to 62 li/158 lcm"
+             ]
+            }
+           ], 
+           "pieces": 0
+          }
+         ], 
+         "segmentId": "GXUXzE1te31MRvma"
+        }
+       ], 
+       "passengers": {
+        "kind": "qpxexpress#passengerCounts", 
+        "adultCount": 1
+       }, 
+       "ptc": "ADT", 
+       "tax": [
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "US", 
+         "country": "US", 
+         "salePrice": "USD29.79", 
+         "chargeType": "GOVERNMENT", 
+         "id": "US_001"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "AY", 
+         "country": "US", 
+         "salePrice": "USD11.20", 
+         "chargeType": "GOVERNMENT", 
+         "id": "AY_001"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "XF", 
+         "country": "US", 
+         "salePrice": "USD9.00", 
+         "chargeType": "GOVERNMENT", 
+         "id": "XF"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "ZP", 
+         "country": "US", 
+         "salePrice": "USD8.00", 
+         "chargeType": "GOVERNMENT", 
+         "id": "ZP"
+        }
+       ], 
+       "fareCalculation": "SAN B6 NYC 187.91OH2QBEN5 B6 SAN 209.30ZH2AUEN5 USD 397.21 END ZP SAN JFK XT 29.79US 8.00ZP 11.20AY 9.00XF SAN4.50 JFK4.50", 
+       "saleFareTotal": "USD397.21", 
+       "baseFareTotal": "USD397.21", 
+       "saleTaxTotal": "USD57.99", 
+       "latestTicketingTime": "2015-08-22T23:59-04:00"
+      }
+     ]
+    }
+   ], 
+   "kind": "qpxexpress#tripOptions", 
+   "data": {
+    "city": [
+     {
+      "kind": "qpxexpress#cityData", 
+      "code": "NYC", 
+      "name": "New York"
+     }, 
+     {
+      "kind": "qpxexpress#cityData", 
+      "code": "SAN", 
+      "name": "San Diego"
+     }
+    ], 
+    "kind": "qpxexpress#data", 
+    "tax": [
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "ZP", 
+      "name": "US Flight Segment Tax"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "AY_001", 
+      "name": "US September 11th Security Fee"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "US_001", 
+      "name": "US Transportation Tax"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "XF", 
+      "name": "US Passenger Facility Charge"
+     }
+    ], 
+    "airport": [
+     {
+      "city": "NYC", 
+      "kind": "qpxexpress#airportData", 
+      "code": "JFK", 
+      "name": "New York John F Kennedy International"
+     }, 
+     {
+      "city": "SAN", 
+      "kind": "qpxexpress#airportData", 
+      "code": "SAN", 
+      "name": "San Diego Lindbergh Field"
+     }
+    ], 
+    "aircraft": [
+     {
+      "kind": "qpxexpress#aircraftData", 
+      "code": "320", 
+      "name": "Airbus A320"
+     }
+    ], 
+    "carrier": [
+     {
+      "kind": "qpxexpress#carrierData", 
+      "code": "B6", 
+      "name": "Jetblue Airways Corporation"
+     }
+    ]
+   }, 
+   "requestId": "Z06AYlikrTNDsIRMa0MiiL"
+  }
+ }, 
+ "7": {
+  "kind": "qpxExpress#tripsSearch", 
+  "trips": {
+   "tripOption": [
+    {
+     "saleTotal": "USD535.20", 
+     "kind": "qpxexpress#tripOption", 
+     "slice": [
+      {
+       "duration": 306, 
+       "kind": "qpxexpress#sliceInfo", 
+       "segment": [
+        {
+         "kind": "qpxexpress#segmentInfo", 
+         "bookingCodeCount": 7, 
+         "flight": {
+          "carrier": "B6", 
+          "number": "90"
+         }, 
+         "leg": [
+          {
+           "origin": "SAN", 
+           "originTerminal": "2", 
+           "departureTime": "2015-10-15T21:00-07:00", 
+           "destinationTerminal": "5", 
+           "secure": true, 
+           "destination": "JFK", 
+           "kind": "qpxexpress#legInfo", 
+           "aircraft": "320", 
+           "onTimePerformance": 90, 
+           "arrivalTime": "2015-10-16T05:06-04:00", 
+           "duration": 306, 
+           "id": "LUkT235TO6o5rI4B", 
+           "mileage": 2439
+          }
+         ], 
+         "bookingCode": "O", 
+         "duration": 306, 
+         "id": "GqYIgfoalGQHMXTd", 
+         "cabin": "COACH", 
+         "marriedSegmentGroup": "0"
+        }
+       ]
+      }, 
+      {
+       "duration": 362, 
+       "kind": "qpxexpress#sliceInfo", 
+       "segment": [
+        {
+         "kind": "qpxexpress#segmentInfo", 
+         "bookingCodeCount": 7, 
+         "flight": {
+          "carrier": "B6", 
+          "number": "89"
+         }, 
+         "leg": [
+          {
+           "origin": "JFK", 
+           "originTerminal": "5", 
+           "departureTime": "2015-10-18T16:59-04:00", 
+           "destinationTerminal": "2", 
+           "secure": true, 
+           "destination": "SAN", 
+           "kind": "qpxexpress#legInfo", 
+           "aircraft": "320", 
+           "onTimePerformance": 80, 
+           "arrivalTime": "2015-10-18T20:01-07:00", 
+           "duration": 362, 
+           "id": "LcG2TgJiLYBpBW0E", 
+           "mileage": 2439
+          }
+         ], 
+         "bookingCode": "W", 
+         "duration": 362, 
+         "id": "GiNBeBve4HapdoPT", 
+         "cabin": "COACH", 
+         "marriedSegmentGroup": "1"
+        }
+       ]
+      }
+     ], 
+     "id": "YyVVCghyoj4NtOgSUsK373001", 
+     "pricing": [
+      {
+       "fare": [
+        {
+         "origin": "SAN", 
+         "basisCode": "OH2QBEN5", 
+         "kind": "qpxexpress#fareInfo", 
+         "destination": "NYC", 
+         "private": true, 
+         "carrier": "B6", 
+         "id": "AQcgEjrFHvfpCybQ8/0c9Oo5NvvR8U7yHo+mul1dCWu0VHU4WSY4diuxsLoVPQ/ZDbqk/t447JH2ykrYyf8DdmcoZUyvVIIg8hGTPeIVTv2zPvhRwJ122mWBpdAUuSdjLvu82xFfj6ZHWFo"
+        }, 
+        {
+         "origin": "NYC", 
+         "basisCode": "WH4JUEN5", 
+         "kind": "qpxexpress#fareInfo", 
+         "destination": "SAN", 
+         "private": true, 
+         "carrier": "B6", 
+         "id": "A20Dh063Ps36c0+vsA8Q3hWfNMagttdnloGuiarOsIQL/I8tZmzWroBwoHNemrCORo33qf74iJId+PcHH7ostG9jkKrtakchtUEgVHZig6pcdChuxL4LUYbeOV9DAmTplcF4Ikgkv6sACkU"
+        }
+       ], 
+       "saleTotal": "USD535.20", 
+       "kind": "qpxexpress#pricingInfo", 
+       "segmentPricing": [
+        {
+         "kind": "qpxexpress#segmentPricing", 
+         "fareId": "A20Dh063Ps36c0+vsA8Q3hWfNMagttdnloGuiarOsIQL/I8tZmzWroBwoHNemrCORo33qf74iJId+PcHH7ostG9jkKrtakchtUEgVHZig6pcdChuxL4LUYbeOV9DAmTplcF4Ikgkv6sACkU", 
+         "freeBaggageOption": [
+          {
+           "kind": "qpxexpress#freeBaggageAllowance", 
+           "bagDescriptor": [
+            {
+             "count": 1, 
+             "subcode": "0GO", 
+             "kind": "qpxexpress#bagDescriptor", 
+             "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+             "description": [
+              "Up to 50 lb/23 kg", 
+              "Up to 62 li/158 lcm"
+             ]
+            }
+           ], 
+           "pieces": 0
+          }
+         ], 
+         "segmentId": "GiNBeBve4HapdoPT"
+        }, 
+        {
+         "kind": "qpxexpress#segmentPricing", 
+         "fareId": "AQcgEjrFHvfpCybQ8/0c9Oo5NvvR8U7yHo+mul1dCWu0VHU4WSY4diuxsLoVPQ/ZDbqk/t447JH2ykrYyf8DdmcoZUyvVIIg8hGTPeIVTv2zPvhRwJ122mWBpdAUuSdjLvu82xFfj6ZHWFo", 
+         "freeBaggageOption": [
+          {
+           "kind": "qpxexpress#freeBaggageAllowance", 
+           "bagDescriptor": [
+            {
+             "count": 1, 
+             "subcode": "0GO", 
+             "kind": "qpxexpress#bagDescriptor", 
+             "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+             "description": [
+              "Up to 50 lb/23 kg", 
+              "Up to 62 li/158 lcm"
+             ]
+            }
+           ], 
+           "pieces": 0
+          }
+         ], 
+         "segmentId": "GqYIgfoalGQHMXTd"
+        }
+       ], 
+       "passengers": {
+        "kind": "qpxexpress#passengerCounts", 
+        "adultCount": 1
+       }, 
+       "ptc": "ADT", 
+       "tax": [
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "US", 
+         "country": "US", 
+         "salePrice": "USD35.37", 
+         "chargeType": "GOVERNMENT", 
+         "id": "US_001"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "AY", 
+         "country": "US", 
+         "salePrice": "USD11.20", 
+         "chargeType": "GOVERNMENT", 
+         "id": "AY_001"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "XF", 
+         "country": "US", 
+         "salePrice": "USD9.00", 
+         "chargeType": "GOVERNMENT", 
+         "id": "XF"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "ZP", 
+         "country": "US", 
+         "salePrice": "USD8.00", 
+         "chargeType": "GOVERNMENT", 
+         "id": "ZP"
+        }
+       ], 
+       "fareCalculation": "SAN B6 NYC 187.91OH2QBEN5 B6 SAN 283.72WH4JUEN5 USD 471.63 END ZP SAN JFK XT 35.37US 8.00ZP 11.20AY 9.00XF SAN4.50 JFK4.50", 
+       "saleFareTotal": "USD471.63", 
+       "baseFareTotal": "USD471.63", 
+       "saleTaxTotal": "USD63.57", 
+       "latestTicketingTime": "2015-08-22T23:59-04:00"
+      }
+     ]
+    }
+   ], 
+   "kind": "qpxexpress#tripOptions", 
+   "data": {
+    "city": [
+     {
+      "kind": "qpxexpress#cityData", 
+      "code": "NYC", 
+      "name": "New York"
+     }, 
+     {
+      "kind": "qpxexpress#cityData", 
+      "code": "SAN", 
+      "name": "San Diego"
+     }
+    ], 
+    "kind": "qpxexpress#data", 
+    "tax": [
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "ZP", 
+      "name": "US Flight Segment Tax"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "AY_001", 
+      "name": "US September 11th Security Fee"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "US_001", 
+      "name": "US Transportation Tax"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "XF", 
+      "name": "US Passenger Facility Charge"
+     }
+    ], 
+    "airport": [
+     {
+      "city": "NYC", 
+      "kind": "qpxexpress#airportData", 
+      "code": "JFK", 
+      "name": "New York John F Kennedy International"
+     }, 
+     {
+      "city": "SAN", 
+      "kind": "qpxexpress#airportData", 
+      "code": "SAN", 
+      "name": "San Diego Lindbergh Field"
+     }
+    ], 
+    "aircraft": [
+     {
+      "kind": "qpxexpress#aircraftData", 
+      "code": "320", 
+      "name": "Airbus A320"
+     }
+    ], 
+    "carrier": [
+     {
+      "kind": "qpxexpress#carrierData", 
+      "code": "B6", 
+      "name": "Jetblue Airways Corporation"
+     }
+    ]
+   }, 
+   "requestId": "49F6VSNwu3V3QjsTF0MiiL"
+  }
+ }, 
+ "8": {
+  "kind": "qpxExpress#tripsSearch", 
+  "trips": {
+   "tripOption": [
+    {
+     "saleTotal": "USD432.21", 
+     "kind": "qpxexpress#tripOption", 
+     "slice": [
+      {
+       "duration": 306, 
+       "kind": "qpxexpress#sliceInfo", 
+       "segment": [
+        {
+         "kind": "qpxexpress#segmentInfo", 
+         "bookingCodeCount": 7, 
+         "flight": {
+          "carrier": "B6", 
+          "number": "90"
+         }, 
+         "leg": [
+          {
+           "origin": "SAN", 
+           "originTerminal": "2", 
+           "departureTime": "2015-10-22T21:00-07:00", 
+           "destinationTerminal": "5", 
+           "secure": true, 
+           "destination": "JFK", 
+           "kind": "qpxexpress#legInfo", 
+           "aircraft": "320", 
+           "onTimePerformance": 90, 
+           "arrivalTime": "2015-10-23T05:06-04:00", 
+           "duration": 306, 
+           "id": "LZcyziqBBBXjlkNI", 
+           "mileage": 2439
+          }
+         ], 
+         "bookingCode": "O", 
+         "duration": 306, 
+         "id": "GAabI0u1kgmS-70O", 
+         "cabin": "COACH", 
+         "marriedSegmentGroup": "0"
+        }
+       ]
+      }, 
+      {
+       "duration": 375, 
+       "kind": "qpxexpress#sliceInfo", 
+       "segment": [
+        {
+         "kind": "qpxexpress#segmentInfo", 
+         "bookingCodeCount": 7, 
+         "flight": {
+          "carrier": "B6", 
+          "number": "89"
+         }, 
+         "leg": [
+          {
+           "origin": "JFK", 
+           "originTerminal": "5", 
+           "departureTime": "2015-10-25T16:56-04:00", 
+           "destinationTerminal": "2", 
+           "secure": true, 
+           "destination": "SAN", 
+           "kind": "qpxexpress#legInfo", 
+           "aircraft": "320", 
+           "onTimePerformance": 80, 
+           "arrivalTime": "2015-10-25T20:11-07:00", 
+           "duration": 375, 
+           "id": "La1lU1UF5RBdrXN7", 
+           "mileage": 2439
+          }
+         ], 
+         "bookingCode": "O", 
+         "duration": 375, 
+         "id": "GobalX-Iz6-1q7nw", 
+         "cabin": "COACH", 
+         "marriedSegmentGroup": "1"
+        }
+       ]
+      }
+     ], 
+     "id": "JY5HTTCWPPKVnKiBoDCoTP001", 
+     "pricing": [
+      {
+       "fare": [
+        {
+         "origin": "SAN", 
+         "basisCode": "OH2QBEN5", 
+         "kind": "qpxexpress#fareInfo", 
+         "destination": "NYC", 
+         "private": true, 
+         "carrier": "B6", 
+         "id": "AQcgEjrFHvfpCybQ8/0c9Oo5NvvR8U7yHo+mul1dCWu0VHU4WSY4diuxsLoVPQ/ZDbqk/t447JH2ykrYyf8DdmcoZUyvVIIg8hGTPeIVTv2zPvhRwJ122mWBpdAUuSdjLvu82xFfj6ZHWFo"
+        }, 
+        {
+         "origin": "NYC", 
+         "basisCode": "OH2QBEN5", 
+         "kind": "qpxexpress#fareInfo", 
+         "destination": "SAN", 
+         "private": true, 
+         "carrier": "B6", 
+         "id": "AQcgEjrFHvfpCybQ8/0c9Oo5NvvR8U7yHo+mul1dCWu0VHU4WSY4diuxsLoVPQ/ZDbqk/t447JH2ykrYyf8DdmcoZUyvVIIg8hGTPeIVTv2zPvhRwJ122mWBpdAUuSdjLvu82xFfj6ZHWFo"
+        }
+       ], 
+       "saleTotal": "USD432.21", 
+       "kind": "qpxexpress#pricingInfo", 
+       "segmentPricing": [
+        {
+         "kind": "qpxexpress#segmentPricing", 
+         "fareId": "AQcgEjrFHvfpCybQ8/0c9Oo5NvvR8U7yHo+mul1dCWu0VHU4WSY4diuxsLoVPQ/ZDbqk/t447JH2ykrYyf8DdmcoZUyvVIIg8hGTPeIVTv2zPvhRwJ122mWBpdAUuSdjLvu82xFfj6ZHWFo", 
+         "freeBaggageOption": [
+          {
+           "kind": "qpxexpress#freeBaggageAllowance", 
+           "bagDescriptor": [
+            {
+             "count": 1, 
+             "subcode": "0GO", 
+             "kind": "qpxexpress#bagDescriptor", 
+             "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+             "description": [
+              "Up to 50 lb/23 kg", 
+              "Up to 62 li/158 lcm"
+             ]
+            }
+           ], 
+           "pieces": 0
+          }
+         ], 
+         "segmentId": "GobalX-Iz6-1q7nw"
+        }, 
+        {
+         "kind": "qpxexpress#segmentPricing", 
+         "fareId": "AQcgEjrFHvfpCybQ8/0c9Oo5NvvR8U7yHo+mul1dCWu0VHU4WSY4diuxsLoVPQ/ZDbqk/t447JH2ykrYyf8DdmcoZUyvVIIg8hGTPeIVTv2zPvhRwJ122mWBpdAUuSdjLvu82xFfj6ZHWFo", 
+         "freeBaggageOption": [
+          {
+           "kind": "qpxexpress#freeBaggageAllowance", 
+           "bagDescriptor": [
+            {
+             "count": 1, 
+             "subcode": "0GO", 
+             "kind": "qpxexpress#bagDescriptor", 
+             "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+             "description": [
+              "Up to 50 lb/23 kg", 
+              "Up to 62 li/158 lcm"
+             ]
+            }
+           ], 
+           "pieces": 0
+          }
+         ], 
+         "segmentId": "GAabI0u1kgmS-70O"
+        }
+       ], 
+       "passengers": {
+        "kind": "qpxexpress#passengerCounts", 
+        "adultCount": 1
+       }, 
+       "ptc": "ADT", 
+       "tax": [
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "US", 
+         "country": "US", 
+         "salePrice": "USD28.19", 
+         "chargeType": "GOVERNMENT", 
+         "id": "US_001"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "AY", 
+         "country": "US", 
+         "salePrice": "USD11.20", 
+         "chargeType": "GOVERNMENT", 
+         "id": "AY_001"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "XF", 
+         "country": "US", 
+         "salePrice": "USD9.00", 
+         "chargeType": "GOVERNMENT", 
+         "id": "XF"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "ZP", 
+         "country": "US", 
+         "salePrice": "USD8.00", 
+         "chargeType": "GOVERNMENT", 
+         "id": "ZP"
+        }
+       ], 
+       "fareCalculation": "SAN B6 NYC 187.91OH2QBEN5 B6 SAN 187.91OH2QBEN5 USD 375.82 END ZP SAN JFK XT 28.19US 8.00ZP 11.20AY 9.00XF SAN4.50 JFK4.50", 
+       "saleFareTotal": "USD375.82", 
+       "baseFareTotal": "USD375.82", 
+       "saleTaxTotal": "USD56.39", 
+       "latestTicketingTime": "2015-08-22T23:59-04:00"
+      }
+     ]
+    }
+   ], 
+   "kind": "qpxexpress#tripOptions", 
+   "data": {
+    "city": [
+     {
+      "kind": "qpxexpress#cityData", 
+      "code": "NYC", 
+      "name": "New York"
+     }, 
+     {
+      "kind": "qpxexpress#cityData", 
+      "code": "SAN", 
+      "name": "San Diego"
+     }
+    ], 
+    "kind": "qpxexpress#data", 
+    "tax": [
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "ZP", 
+      "name": "US Flight Segment Tax"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "AY_001", 
+      "name": "US September 11th Security Fee"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "US_001", 
+      "name": "US Transportation Tax"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "XF", 
+      "name": "US Passenger Facility Charge"
+     }
+    ], 
+    "airport": [
+     {
+      "city": "NYC", 
+      "kind": "qpxexpress#airportData", 
+      "code": "JFK", 
+      "name": "New York John F Kennedy International"
+     }, 
+     {
+      "city": "SAN", 
+      "kind": "qpxexpress#airportData", 
+      "code": "SAN", 
+      "name": "San Diego Lindbergh Field"
+     }
+    ], 
+    "aircraft": [
+     {
+      "kind": "qpxexpress#aircraftData", 
+      "code": "320", 
+      "name": "Airbus A320"
+     }
+    ], 
+    "carrier": [
+     {
+      "kind": "qpxexpress#carrierData", 
+      "code": "B6", 
+      "name": "Jetblue Airways Corporation"
+     }
+    ]
+   }, 
+   "requestId": "TGDpzYNQvkAx2amz70MiiL"
+  }
+ }, 
+ "9": {
+  "kind": "qpxExpress#tripsSearch", 
+  "trips": {
+   "tripOption": [
+    {
+     "saleTotal": "USD432.21", 
+     "kind": "qpxexpress#tripOption", 
+     "slice": [
+      {
+       "duration": 300, 
+       "kind": "qpxexpress#sliceInfo", 
+       "segment": [
+        {
+         "kind": "qpxexpress#segmentInfo", 
+         "bookingCodeCount": 7, 
+         "flight": {
+          "carrier": "B6", 
+          "number": "90"
+         }, 
+         "leg": [
+          {
+           "origin": "SAN", 
+           "originTerminal": "2", 
+           "departureTime": "2015-10-29T21:05-07:00", 
+           "destinationTerminal": "5", 
+           "secure": true, 
+           "destination": "JFK", 
+           "kind": "qpxexpress#legInfo", 
+           "aircraft": "320", 
+           "onTimePerformance": 90, 
+           "arrivalTime": "2015-10-30T05:05-04:00", 
+           "duration": 300, 
+           "id": "LfO-h7mXOUzo0btP", 
+           "mileage": 2439
+          }
+         ], 
+         "bookingCode": "O", 
+         "duration": 300, 
+         "id": "Gj7LEveaIKjx92XW", 
+         "cabin": "COACH", 
+         "marriedSegmentGroup": "0"
+        }
+       ]
+      }, 
+      {
+       "duration": 375, 
+       "kind": "qpxexpress#sliceInfo", 
+       "segment": [
+        {
+         "kind": "qpxexpress#segmentInfo", 
+         "bookingCodeCount": 7, 
+         "flight": {
+          "carrier": "B6", 
+          "number": "89"
+         }, 
+         "leg": [
+          {
+           "origin": "JFK", 
+           "originTerminal": "5", 
+           "departureTime": "2015-11-01T16:56-05:00", 
+           "destinationTerminal": "2", 
+           "secure": true, 
+           "destination": "SAN", 
+           "kind": "qpxexpress#legInfo", 
+           "aircraft": "320", 
+           "onTimePerformance": 80, 
+           "arrivalTime": "2015-11-01T20:11-08:00", 
+           "duration": 375, 
+           "id": "LMy8i4oAWItTh1R3", 
+           "mileage": 2439
+          }
+         ], 
+         "bookingCode": "O", 
+         "duration": 375, 
+         "id": "GjV9VPYst1Oel92r", 
+         "cabin": "COACH", 
+         "marriedSegmentGroup": "1"
+        }
+       ]
+      }
+     ], 
+     "id": "QjCqg23AYe2UhrKk4N8Pc0001", 
+     "pricing": [
+      {
+       "fare": [
+        {
+         "origin": "SAN", 
+         "basisCode": "OH2QBEN5", 
+         "kind": "qpxexpress#fareInfo", 
+         "destination": "NYC", 
+         "private": true, 
+         "carrier": "B6", 
+         "id": "AQcgEjrFHvfpCybQ8/0c9Oo5NvvR8U7yHo+mul1dCWu0VHU4WSY4diuxsLoVPQ/ZDbqk/t447JH2ykrYyf8DdmcoZUyvVIIg8hGTPeIVTv2zPvhRwJ122mWBpdAUuSdjLvu82xFfj6ZHWFo"
+        }, 
+        {
+         "origin": "NYC", 
+         "basisCode": "OH2QBEN5", 
+         "kind": "qpxexpress#fareInfo", 
+         "destination": "SAN", 
+         "private": true, 
+         "carrier": "B6", 
+         "id": "AQcgEjrFHvfpCybQ8/0c9Oo5NvvR8U7yHo+mul1dCWu0VHU4WSY4diuxsLoVPQ/ZDbqk/t447JH2ykrYyf8DdmcoZUyvVIIg8hGTPeIVTv2zPvhRwJ122mWBpdAUuSdjLvu82xFfj6ZHWFo"
+        }
+       ], 
+       "saleTotal": "USD432.21", 
+       "kind": "qpxexpress#pricingInfo", 
+       "segmentPricing": [
+        {
+         "kind": "qpxexpress#segmentPricing", 
+         "fareId": "AQcgEjrFHvfpCybQ8/0c9Oo5NvvR8U7yHo+mul1dCWu0VHU4WSY4diuxsLoVPQ/ZDbqk/t447JH2ykrYyf8DdmcoZUyvVIIg8hGTPeIVTv2zPvhRwJ122mWBpdAUuSdjLvu82xFfj6ZHWFo", 
+         "freeBaggageOption": [
+          {
+           "kind": "qpxexpress#freeBaggageAllowance", 
+           "bagDescriptor": [
+            {
+             "count": 1, 
+             "subcode": "0GO", 
+             "kind": "qpxexpress#bagDescriptor", 
+             "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+             "description": [
+              "Up to 50 lb/23 kg", 
+              "Up to 62 li/158 lcm"
+             ]
+            }
+           ], 
+           "pieces": 0
+          }
+         ], 
+         "segmentId": "Gj7LEveaIKjx92XW"
+        }, 
+        {
+         "kind": "qpxexpress#segmentPricing", 
+         "fareId": "AQcgEjrFHvfpCybQ8/0c9Oo5NvvR8U7yHo+mul1dCWu0VHU4WSY4diuxsLoVPQ/ZDbqk/t447JH2ykrYyf8DdmcoZUyvVIIg8hGTPeIVTv2zPvhRwJ122mWBpdAUuSdjLvu82xFfj6ZHWFo", 
+         "freeBaggageOption": [
+          {
+           "kind": "qpxexpress#freeBaggageAllowance", 
+           "bagDescriptor": [
+            {
+             "count": 1, 
+             "subcode": "0GO", 
+             "kind": "qpxexpress#bagDescriptor", 
+             "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+             "description": [
+              "Up to 50 lb/23 kg", 
+              "Up to 62 li/158 lcm"
+             ]
+            }
+           ], 
+           "pieces": 0
+          }
+         ], 
+         "segmentId": "GjV9VPYst1Oel92r"
+        }
+       ], 
+       "passengers": {
+        "kind": "qpxexpress#passengerCounts", 
+        "adultCount": 1
+       }, 
+       "ptc": "ADT", 
+       "tax": [
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "US", 
+         "country": "US", 
+         "salePrice": "USD28.19", 
+         "chargeType": "GOVERNMENT", 
+         "id": "US_001"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "AY", 
+         "country": "US", 
+         "salePrice": "USD11.20", 
+         "chargeType": "GOVERNMENT", 
+         "id": "AY_001"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "XF", 
+         "country": "US", 
+         "salePrice": "USD9.00", 
+         "chargeType": "GOVERNMENT", 
+         "id": "XF"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "ZP", 
+         "country": "US", 
+         "salePrice": "USD8.00", 
+         "chargeType": "GOVERNMENT", 
+         "id": "ZP"
+        }
+       ], 
+       "fareCalculation": "SAN B6 NYC 187.91OH2QBEN5 B6 SAN 187.91OH2QBEN5 USD 375.82 END ZP SAN JFK XT 28.19US 8.00ZP 11.20AY 9.00XF SAN4.50 JFK4.50", 
+       "saleFareTotal": "USD375.82", 
+       "baseFareTotal": "USD375.82", 
+       "saleTaxTotal": "USD56.39", 
+       "latestTicketingTime": "2015-08-22T23:59-04:00"
+      }
+     ]
+    }
+   ], 
+   "kind": "qpxexpress#tripOptions", 
+   "data": {
+    "city": [
+     {
+      "kind": "qpxexpress#cityData", 
+      "code": "NYC", 
+      "name": "New York"
+     }, 
+     {
+      "kind": "qpxexpress#cityData", 
+      "code": "SAN", 
+      "name": "San Diego"
+     }
+    ], 
+    "kind": "qpxexpress#data", 
+    "tax": [
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "ZP", 
+      "name": "US Flight Segment Tax"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "AY_001", 
+      "name": "US September 11th Security Fee"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "US_001", 
+      "name": "US Transportation Tax"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "XF", 
+      "name": "US Passenger Facility Charge"
+     }
+    ], 
+    "airport": [
+     {
+      "city": "NYC", 
+      "kind": "qpxexpress#airportData", 
+      "code": "JFK", 
+      "name": "New York John F Kennedy International"
+     }, 
+     {
+      "city": "SAN", 
+      "kind": "qpxexpress#airportData", 
+      "code": "SAN", 
+      "name": "San Diego Lindbergh Field"
+     }
+    ], 
+    "aircraft": [
+     {
+      "kind": "qpxexpress#aircraftData", 
+      "code": "320", 
+      "name": "Airbus A320"
+     }
+    ], 
+    "carrier": [
+     {
+      "kind": "qpxexpress#carrierData", 
+      "code": "B6", 
+      "name": "Jetblue Airways Corporation"
+     }
+    ]
+   }, 
+   "requestId": "LkChejrSLckXZBSoI0MiiL"
+  }
+ }, 
+ "10": {
+  "kind": "qpxExpress#tripsSearch", 
+  "trips": {
+   "tripOption": [
+    {
+     "saleTotal": "USD432.21", 
+     "kind": "qpxexpress#tripOption", 
+     "slice": [
+      {
+       "duration": 300, 
+       "kind": "qpxexpress#sliceInfo", 
+       "segment": [
+        {
+         "kind": "qpxexpress#segmentInfo", 
+         "bookingCodeCount": 7, 
+         "flight": {
+          "carrier": "B6", 
+          "number": "90"
+         }, 
+         "leg": [
+          {
+           "origin": "SAN", 
+           "originTerminal": "2", 
+           "departureTime": "2015-11-05T21:05-08:00", 
+           "destinationTerminal": "5", 
+           "secure": true, 
+           "destination": "JFK", 
+           "kind": "qpxexpress#legInfo", 
+           "aircraft": "320", 
+           "onTimePerformance": 90, 
+           "arrivalTime": "2015-11-06T05:05-05:00", 
+           "duration": 300, 
+           "id": "L33jPT-MV66RcydC", 
+           "mileage": 2439
+          }
+         ], 
+         "bookingCode": "O", 
+         "duration": 300, 
+         "id": "GoxokQ3yRRNaHIFa", 
+         "cabin": "COACH", 
+         "marriedSegmentGroup": "0"
+        }
+       ]
+      }, 
+      {
+       "duration": 375, 
+       "kind": "qpxexpress#sliceInfo", 
+       "segment": [
+        {
+         "kind": "qpxexpress#segmentInfo", 
+         "bookingCodeCount": 7, 
+         "flight": {
+          "carrier": "B6", 
+          "number": "89"
+         }, 
+         "leg": [
+          {
+           "origin": "JFK", 
+           "originTerminal": "5", 
+           "departureTime": "2015-11-08T16:56-05:00", 
+           "destinationTerminal": "2", 
+           "secure": true, 
+           "destination": "SAN", 
+           "kind": "qpxexpress#legInfo", 
+           "aircraft": "320", 
+           "onTimePerformance": 80, 
+           "arrivalTime": "2015-11-08T20:11-08:00", 
+           "duration": 375, 
+           "id": "LmpOfe4N2J-X5ZnX", 
+           "mileage": 2439
+          }
+         ], 
+         "bookingCode": "O", 
+         "duration": 375, 
+         "id": "Glx657-OD1j-TkPB", 
+         "cabin": "COACH", 
+         "marriedSegmentGroup": "1"
+        }
+       ]
+      }
+     ], 
+     "id": "8HCF5vdswI0QqsgXQy4xxM001", 
+     "pricing": [
+      {
+       "fare": [
+        {
+         "origin": "SAN", 
+         "basisCode": "OH2QBEN5", 
+         "kind": "qpxexpress#fareInfo", 
+         "destination": "NYC", 
+         "private": true, 
+         "carrier": "B6", 
+         "id": "AQcgEjrFHvfpCybQ8/0c9Oo5NvvR8U7yHo+mul1dCWu0VHU4WSY4diuxsLoVPQ/ZDbqk/t447JH2ykrYyf8DdmcoZUyvVIIg8hGTPeIVTv2zPvhRwJ122mWBpdAUuSdjLvu82xFfj6ZHWFo"
+        }, 
+        {
+         "origin": "NYC", 
+         "basisCode": "OH2QBEN5", 
+         "kind": "qpxexpress#fareInfo", 
+         "destination": "SAN", 
+         "private": true, 
+         "carrier": "B6", 
+         "id": "AQcgEjrFHvfpCybQ8/0c9Oo5NvvR8U7yHo+mul1dCWu0VHU4WSY4diuxsLoVPQ/ZDbqk/t447JH2ykrYyf8DdmcoZUyvVIIg8hGTPeIVTv2zPvhRwJ122mWBpdAUuSdjLvu82xFfj6ZHWFo"
+        }
+       ], 
+       "saleTotal": "USD432.21", 
+       "kind": "qpxexpress#pricingInfo", 
+       "segmentPricing": [
+        {
+         "kind": "qpxexpress#segmentPricing", 
+         "fareId": "AQcgEjrFHvfpCybQ8/0c9Oo5NvvR8U7yHo+mul1dCWu0VHU4WSY4diuxsLoVPQ/ZDbqk/t447JH2ykrYyf8DdmcoZUyvVIIg8hGTPeIVTv2zPvhRwJ122mWBpdAUuSdjLvu82xFfj6ZHWFo", 
+         "freeBaggageOption": [
+          {
+           "kind": "qpxexpress#freeBaggageAllowance", 
+           "bagDescriptor": [
+            {
+             "count": 1, 
+             "subcode": "0GO", 
+             "kind": "qpxexpress#bagDescriptor", 
+             "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+             "description": [
+              "Up to 50 lb/23 kg", 
+              "Up to 62 li/158 lcm"
+             ]
+            }
+           ], 
+           "pieces": 0
+          }
+         ], 
+         "segmentId": "Glx657-OD1j-TkPB"
+        }, 
+        {
+         "kind": "qpxexpress#segmentPricing", 
+         "fareId": "AQcgEjrFHvfpCybQ8/0c9Oo5NvvR8U7yHo+mul1dCWu0VHU4WSY4diuxsLoVPQ/ZDbqk/t447JH2ykrYyf8DdmcoZUyvVIIg8hGTPeIVTv2zPvhRwJ122mWBpdAUuSdjLvu82xFfj6ZHWFo", 
+         "freeBaggageOption": [
+          {
+           "kind": "qpxexpress#freeBaggageAllowance", 
+           "bagDescriptor": [
+            {
+             "count": 1, 
+             "subcode": "0GO", 
+             "kind": "qpxexpress#bagDescriptor", 
+             "commercialName": "UPTO50LB 23KG AND62LI 158LCM", 
+             "description": [
+              "Up to 50 lb/23 kg", 
+              "Up to 62 li/158 lcm"
+             ]
+            }
+           ], 
+           "pieces": 0
+          }
+         ], 
+         "segmentId": "GoxokQ3yRRNaHIFa"
+        }
+       ], 
+       "passengers": {
+        "kind": "qpxexpress#passengerCounts", 
+        "adultCount": 1
+       }, 
+       "ptc": "ADT", 
+       "tax": [
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "US", 
+         "country": "US", 
+         "salePrice": "USD28.19", 
+         "chargeType": "GOVERNMENT", 
+         "id": "US_001"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "AY", 
+         "country": "US", 
+         "salePrice": "USD11.20", 
+         "chargeType": "GOVERNMENT", 
+         "id": "AY_001"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "XF", 
+         "country": "US", 
+         "salePrice": "USD9.00", 
+         "chargeType": "GOVERNMENT", 
+         "id": "XF"
+        }, 
+        {
+         "kind": "qpxexpress#taxInfo", 
+         "code": "ZP", 
+         "country": "US", 
+         "salePrice": "USD8.00", 
+         "chargeType": "GOVERNMENT", 
+         "id": "ZP"
+        }
+       ], 
+       "fareCalculation": "SAN B6 NYC 187.91OH2QBEN5 B6 SAN 187.91OH2QBEN5 USD 375.82 END ZP SAN JFK XT 28.19US 8.00ZP 11.20AY 9.00XF SAN4.50 JFK4.50", 
+       "saleFareTotal": "USD375.82", 
+       "baseFareTotal": "USD375.82", 
+       "saleTaxTotal": "USD56.39", 
+       "latestTicketingTime": "2015-08-22T23:59-04:00"
+      }
+     ]
+    }
+   ], 
+   "kind": "qpxexpress#tripOptions", 
+   "data": {
+    "city": [
+     {
+      "kind": "qpxexpress#cityData", 
+      "code": "NYC", 
+      "name": "New York"
+     }, 
+     {
+      "kind": "qpxexpress#cityData", 
+      "code": "SAN", 
+      "name": "San Diego"
+     }
+    ], 
+    "kind": "qpxexpress#data", 
+    "tax": [
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "ZP", 
+      "name": "US Flight Segment Tax"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "AY_001", 
+      "name": "US September 11th Security Fee"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "US_001", 
+      "name": "US Transportation Tax"
+     }, 
+     {
+      "kind": "qpxexpress#taxData", 
+      "id": "XF", 
+      "name": "US Passenger Facility Charge"
+     }
+    ], 
+    "airport": [
+     {
+      "city": "NYC", 
+      "kind": "qpxexpress#airportData", 
+      "code": "JFK", 
+      "name": "New York John F Kennedy International"
+     }, 
+     {
+      "city": "SAN", 
+      "kind": "qpxexpress#airportData", 
+      "code": "SAN", 
+      "name": "San Diego Lindbergh Field"
+     }
+    ], 
+    "aircraft": [
+     {
+      "kind": "qpxexpress#aircraftData", 
+      "code": "320", 
+      "name": "Airbus A320"
+     }
+    ], 
+    "carrier": [
+     {
+      "kind": "qpxexpress#carrierData", 
+      "code": "B6", 
+      "name": "Jetblue Airways Corporation"
+     }
+    ]
+   }, 
+   "requestId": "mN7z9w4z6hYby1SO00MiiL"
+  }
+ }
+}

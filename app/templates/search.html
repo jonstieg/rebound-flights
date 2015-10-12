@@ -7,16 +7,32 @@
       <h1><u>Search</u></h1>
       <br>
       Please enter your Departing Airport:
-      <!-- <input type="text" class="form-control" name="departingAirport" size="3"> -->
-      {{ form.departingAirport(size=5) }}<br>
+      <input type="text" 
+      class="awesomecomplete" 
+      name="departingAirport" 
+      style="font-size:14pt;" 
+      size="7" list="airportcodes" 
+      minChars="1" 
+      maxItems="5" 
+      data-autofirst="true" 
+      autoFirst="true"
+      />
+<!--       {{ form.departingAirport(size=5) }}<br>
       {% for error in form.departingAirport.errors %}
         <span style="color: red;">[{{ error }}]</span>
-      {% endfor %}<br>
+      {% endfor %} -->
+      <br><br>
       Please enter your Arriving Airport:
-      {{ form.arrivingAirport(size=5) }}<br>
-      {% for error in form.arrivingAirport.errors %}
-        <span style="color: red;">[{{ error }}]</span>
-      {% endfor %}
+      <input type="text" 
+      class="awesomecomplete" 
+      name="arrivingAirport" 
+      style="font-size:14pt;" 
+      size="7" list="airportcodes" 
+      minChars="1" 
+      maxItems="5" 
+      data-autofirst="true" 
+      autoFirst="true"
+      />
     </div>
     <br>
     <div class="container">
@@ -67,8 +83,8 @@
           <label class="segmented-control__label" for="DEPtwoStops">2</label>
         </li>
         <li class="segmented-control__item">
-          <input class="segmented-control__input" type="radio" value="99" name="depStops" id="DEPthreeStops" checked>
-          <label class="segmented-control__label" for="DEPthreeStops">&infin;</label>
+          <input class="segmented-control__input" type="radio" value="3" name="depStops" id="DEPthreeStops" checked>
+          <label class="segmented-control__label" for="DEPthreeStops">3</label>
         </li>
       </ul>
       What's the earliest or latest you'd like your flight to take off? (Leave blank to depart at anytime)
@@ -151,8 +167,8 @@
           <label class="segmented-control__label" for="RETtwoStops">2</label>
         </li>
         <li class="segmented-control__item">
-          <input class="segmented-control__input" type="radio" value="99" name="retStops" id="RETthreeStops" checked>
-          <label class="segmented-control__label" for="RETthreeStops">&infin;</label>
+          <input class="segmented-control__input" type="radio" value="3" name="retStops" id="RETthreeStops" checked>
+          <label class="segmented-control__label" for="RETthreeStops">3</label>
         </li>
       </ul>
       What's the earliest or latest you'd like your flight to take off? (Leave blank to depart at anytime)

@@ -11,15 +11,15 @@ def search():
         rebound = ReBound()
         if form.validate_on_submit():
             dateGo = datetime.today()
-            weeksToSearch = 20
+            weeksToSearch = 5
             flash ('Results:')
             for x in range(1,weeksToSearch+1):
-                flights = rebound.reboundSearch(dateGo, form.departingAirport.data, form.arrivingAirport.data, request.form['depDay'], request.form['retDay'], request.form['depStops'], request.form['retStops'], request.form['departingTimeEarly'],request.form['depTimeEarlyAMPM'], request.form['departingTimeLate'], request.form['depTimeLateAMPM'], request.form['returningTimeEarly'], request.form['retTimeEarlyAMPM'], request.form['returningTimeLate'], request.form['retTimeLateAMPM'])
+                flights = rebound.reboundSearch(dateGo, request.form['departingAirport'], request.form['arrivingAirport'], request.form['depDay'], request.form['retDay'], request.form['depStops'], request.form['retStops'], request.form['departingTimeEarly'], request.form['depTimeEarlyAMPM'], request.form['departingTimeLate'], request.form['depTimeLateAMPM'], request.form['returningTimeEarly'], request.form['retTimeEarlyAMPM'], request.form['returningTimeLate'], request.form['retTimeLateAMPM'])
                 for x in flights:
                     year = x[0][:4]
                     month = x[0][5:7]
                     day = x[0][8:10]
-                    months = {"01":"Januray", "02": "February", "03": "March", "04": "April", "05":"May", "06":"June", "07":"July", "08":"August", "09": "September", "10":"October", "11":"November", "12":"December"}
+                    months = {"01":"January", "02": "February", "03": "March", "04": "April", "05":"May", "06":"June", "07":"July", "08":"August", "09": "September", "10":"October", "11":"November", "12":"December"}
                     flash("On %s %s, %s your flight will cost $%s" % (months[month], day, year, x[1]))
                     # 2015-09-24T21:00-07:00
                 dateGo = dateGo + timedelta(7)

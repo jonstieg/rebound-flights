@@ -17,7 +17,7 @@ class ReBound():
     weeksToSearch = 1
 
     # time.sleep(35)
-    
+
     api_key = "AIzaSyBZj9cQKwEbMVQoSAgbfP1nhntS7peg-Jw"
     url = "https://www.googleapis.com/qpxExpress/v1/trips/search?key=" + api_key
     headers = {'content-type': 'application/json'}
@@ -25,7 +25,7 @@ class ReBound():
     #dateGo = datetime.today()
     while dateGo.weekday() != departingWeekday: 
         dateGo += timedelta(days=1)
-    dateReturn = dateGo
+    dateReturn = dateGo + timedelta(days=1)
     while dateReturn.weekday() != returningWeekday: 
         dateReturn += timedelta(days=1)
     data = {};
