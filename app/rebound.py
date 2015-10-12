@@ -18,7 +18,7 @@ class ReBound():
 
     # time.sleep(35)
 
-    api_key = os.environ['googAPI']
+    api_key = environ['googAPI']
     url = "https://www.googleapis.com/qpxExpress/v1/trips/search?key=" + api_key
     headers = {'content-type': 'application/json'}
 
