@@ -8,33 +8,39 @@
       <br>
       Please enter your Departing Airport:
       <input type="text" 
-      class="awesomecomplete" 
       name="departingAirport" 
-      style="font-size:14pt;" 
-      size="7" list="airportcodes" 
+      id="departingAirport" 
       onClick="this.value='';"
-      minChars="1" 
-      maxItems="5" 
-      data-autofirst="true" 
-      autoFirst="true"
+      style="font-size:14pt;" 
+      size="20" 
       />
-<!--       {{ form.departingAirport(size=5) }}<br>
-      {% for error in form.departingAirport.errors %}
-        <span style="color: red;">[{{ error }}]</span>
-      {% endfor %} -->
       <br><br>
       Please enter your Arriving Airport:
       <input type="text" 
-      class="awesomecomplete" 
       name="arrivingAirport" 
+      id="arrivingAirport" 
       style="font-size:14pt;" 
-      size="7" list="airportcodes" 
+      size="20"
       onClick="this.value='';"
-      minChars="1" 
-      maxItems="5" 
-      data-autofirst="true" 
-      autoFirst="true"
       />
+      <script>
+      var departing = new Awesomplete(document.getElementById("departingAirport"), {
+        minChars: 1,
+        autoFirst: true,
+        filter: function(text, input) {
+          return Awesomplete.FILTER_CONTAINS(text, input);
+        },
+        list: "#airportcodes",
+      });
+       var arriving = new Awesomplete(document.getElementById("arrivingAirport"), {
+        minChars: 1,
+        autoFirst: true,
+        filter: function(text, input) {
+          return Awesomplete.FILTER_CONTAINS(text, input);
+        },
+        list: "#airportcodes",
+      });
+      </script>
     </div>
     <br>
     <div class="container">
