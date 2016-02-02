@@ -11,7 +11,7 @@ def search():
         rebound = ReBound()
         if form.validate_on_submit():
             dateGo = datetime.today()
-            weeksToSearch = 12
+            weeksToSearch = 18
             flash ('Results:')
             for x in range(1,weeksToSearch+1):
                 depAir = request.form['departingAirport'][:3]
