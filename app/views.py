@@ -24,8 +24,7 @@ def search():
                     month = x[0][5:7]
                     day = x[0][8:10]
                     months = {"01":"January", "02": "February", "03": "March", "04": "April", "05":"May", "06":"June", "07":"July", "08":"August", "09": "September", "10":"October", "11":"November", "12":"December"}
-                    #flash("On %s %s, %s your flight will cost $%s" % (months[month], day, year, x[December"}
-                    flash(month + r'//' + day + r'//' + year + r': ' + x[1])
+                    flash("%s/%s/%s: %s" % (month, day, year, x[1]))
                     # 2015-09-24T21:00-07:00
                 dateGo = dateGo + timedelta(7)
     except:
