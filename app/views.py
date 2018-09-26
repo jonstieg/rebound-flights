@@ -10,14 +10,14 @@ def search():
         form = Search()
         rebound = ReBound()
         if form.validate_on_submit():
-#             dateGo = datetime.today()
-#             weeksToSearch = 18
+            dateGo = datetime.today()
+            weeksToSearch = 18
 #             flash ('Results:')
-#             for x in range(1,weeksToSearch+1):
-#                 depAir = request.form['departingAirport'][:3]
-#                 retAir = request.form['arrivingAirport'][:3]
-#                 print depAir
-#                 print retAir
+            for x in range(1,weeksToSearch+1):
+                depAir = request.form['departingAirport'][:3]
+                retAir = request.form['arrivingAirport'][:3]
+                print depAir
+                print retAir
             flights = rebound.reboundSearch(dateGo, depAir, retAir, request.form['depDay'], request.form['retDay'], request.form['depStops'], request.form['retStops'], request.form['departingTimeEarly'], request.form['depTimeEarlyAMPM'], request.form['departingTimeLate'], request.form['depTimeLateAMPM'], request.form['returningTimeEarly'], request.form['retTimeEarlyAMPM'], request.form['returningTimeLate'], request.form['retTimeLateAMPM'])
             for x in flights:
 #                     year = x[0][:4]
