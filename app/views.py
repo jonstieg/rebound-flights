@@ -3,6 +3,7 @@ from app import app
 from .forms import Search
 from .rebound import ReBound
 from datetime import datetime, date, timedelta
+import time
 
 @app.route('/', methods=['GET', 'POST'])
 def search():
@@ -19,6 +20,7 @@ def search():
                 print depAir
                 print retAir
             flights = rebound.reboundSearch(dateGo, depAir, retAir, request.form['depDay'], request.form['retDay'], request.form['depStops'], request.form['retStops'], request.form['departingTimeEarly'], request.form['depTimeEarlyAMPM'], request.form['departingTimeLate'], request.form['depTimeLateAMPM'], request.form['returningTimeEarly'], request.form['retTimeEarlyAMPM'], request.form['returningTimeLate'], request.form['retTimeLateAMPM'])
+            time.sleep(4)
             for x in flights:
 #                     year = x[0][:4]
 #                     month = x[0][5:7]
