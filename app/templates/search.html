@@ -46,7 +46,7 @@
       </script>
     </div>
     <br>
-    <div class="container">
+     <div class="container">
       <h2>Flight there:</h2><br>
       What day would you like to leave on?
       <ul class="segmented-control">
@@ -86,26 +86,22 @@
           <label class="segmented-control__label" for="DEPnoStops">0</label>
         </li>
         <li class="segmented-control__item">
-          <input class="segmented-control__input" type="radio" value="1" name="depStops" id="DEPoneStop" >
+          <input class="segmented-control__input" type="radio" value="-2" name="depStops" id="DEPoneStop" checked>
           <label class="segmented-control__label" for="DEPoneStop">1</label>
         </li>
         <li class="segmented-control__item">
-          <input class="segmented-control__input" type="radio" value="2" name="depStops" id="DEPtwoStops" checked>
-          <label class="segmented-control__label" for="DEPtwoStops">2</label>
-        </li>
-        <li class="segmented-control__item">
-          <input class="segmented-control__input" type="radio" value="3" name="depStops" id="DEPthreeStops">
-          <label class="segmented-control__label" for="DEPthreeStops">3</label>
+          <input class="segmented-control__input" type="radio" value="2" name="depStops" id="DEPtwoStops" >
+          <label class="segmented-control__label" for="DEPtwoStops">2+</label>
         </li>
       </ul>
-      What's the earliest or latest you'd like your flight to take off? (Leave blank to depart at anytime)
+      What's the earliest or latest you'd like your flight to take off? (Delete values to depart at anytime)
       <br>
       <br>
       <ul class="oneline">
         <div class = "trykeeptogether">
           <div class = "trykeeptogether">
             <tt>Early:</tt>
-            <input type="text" value="8" style="font-size:14pt;text-align: right" onClick="this.value='';" name="departingTimeEarly" size="2" pattern="\d*">&nbsp;
+            <input  id="depMinTime" type="text" value="8" style="font-size:14pt;text-align: right" onClick="this.value='';" name="departingTimeEarly" size="2" pattern="\d*">&nbsp;
             <li class="oneline__item">
               <input class="oneline__input" type="radio" value="0" name="depTimeEarlyAMPM" id="departingTimeEarlyAM" checked>
               <label class="oneline__label" for="departingTimeEarlyAM">AM</label>
@@ -117,7 +113,7 @@
           </div>
           &nbsp;&nbsp;&nbsp;
           <div class = "trykeeptogether"><tt>Late:&nbsp;</tt>
-            <input type="text" value="10" onClick="this.value='';" name="departingTimeLate" size="2" style="font-size:14pt;text-align: right" pattern="\d*">&nbsp;
+            <input id="depMaxTime" type="text" value="10" onClick="this.value='';" name="departingTimeLate" size="2" style="font-size:14pt;text-align: right" pattern="\d*">&nbsp;
             <li class="oneline__item">
               <input class="oneline__input" type="radio" value="0" name="depTimeLateAMPM" id="departingtimeLateAM" >
               <label class="oneline__label" for="departingtimeLateAM">AM</label>
@@ -170,26 +166,22 @@
           <label class="segmented-control__label" for="RETnoStops">0</label>
         </li>
         <li class="segmented-control__item">
-          <input class="segmented-control__input" type="radio" value="1" name="retStops" id="REToneStop" >
+          <input class="segmented-control__input" type="radio" value="-2" name="retStops" id="REToneStop" checked>
           <label class="segmented-control__label" for="REToneStop">1</label>
         </li>
         <li class="segmented-control__item">
-          <input class="segmented-control__input" type="radio" value="2" name="retStops" id="RETtwoStops" checked>
-          <label class="segmented-control__label" for="RETtwoStops">2</label>
-        </li>
-        <li class="segmented-control__item">
-          <input class="segmented-control__input" type="radio" value="3" name="retStops" id="RETthreeStops" >
-          <label class="segmented-control__label" for="RETthreeStops">3</label>
+          <input class="segmented-control__input" type="radio" value="2" name="retStops" id="RETtwoStops" >
+          <label class="segmented-control__label" for="RETtwoStops">2+</label>
         </li>
       </ul>
-      What's the earliest or latest you'd like your flight to take off? (Leave blank to depart at anytime)
+      What's the earliest or latest you'd like your flight to take off? (Delete values to depart at anytime)
       <br>
       <br>
       <ul class="oneline">
         <div class = "trykeeptogether">
           <div class = "trykeeptogether">
             <tt>Early:</tt>
-            <input type="text" value="8" onClick="this.value='';" name="returningTimeEarly" size="2" style="font-size:14pt;text-align: right" pattern="\d*">&nbsp;
+            <input id="retMinTime" type="text" value="8" onClick="this.value='';" name="returningTimeEarly" size="2" style="font-size:14pt;text-align: right" pattern="\d*">&nbsp;
             <li class="oneline__item">
               <input class="oneline__input" type="radio" value="0" name="retTimeEarlyAMPM" id="returningTimeEarlyAM" checked>
               <label class="oneline__label" for="returningTimeEarlyAM">AM</label>
@@ -201,7 +193,7 @@
           </div>
           &nbsp;&nbsp;&nbsp;
           <div class = "trykeeptogether"><tt>Late:&nbsp;</tt>
-            <input type="text" value="10" onClick="this.value='';" name="returningTimeLate" size="2" style="font-size:14pt;text-align: right" pattern="\d*">&nbsp;
+            <input id="retMaxTime" type="text" value="10" onClick="this.value='';" name="returningTimeLate" size="2" style="font-size:14pt;text-align: right" pattern="\d*">&nbsp;
             <li class="oneline__item">
               <input class="oneline__input" type="radio" value="0" name="retTimeLateAMPM" id="returningtimeLateAM" >
               <label class="oneline__label" for="returningtimeLateAM">AM</label>
@@ -216,7 +208,112 @@
     </div>
     <br>
     <div class="container">
-      <p><input type="submit" value="Search" onClick="this.form.submit(); this.disabled=true; this.value='Searching...';" class="btn btn-primary btn-lg btn-block" ></p>
+      <!-- <p><input type="submit" value="Search" onClick="this.form.submit(); this.disabled=true; this.value='Searching...';" class="btn btn-primary btn-lg btn-block" ></p> -->
+      <p><button onClick="return searchKayak();" class="btn btn-primary btn-lg btn-block" style="background-color: #ff5e14">
+          Search
+        </button></p>
+      <script>
+        function searchKayak() {
+            var i;
+            for (i = 0; i < 30; i++) { 
+                window.open(generateURL(i), '_blank');
+            }
+            return false;
+        }
+        function generateURL(loopCount) {
+            return "https://www.kayak.com/flights/" + 
+            document.getElementById('departingAirport').value.slice(0,3) +
+            "-"+
+            document.getElementById('arrivingAirport').value.slice(0,3) +
+            
+            generateDate(loopCount) +
+            
+            "?sort=price_a" + 
+
+            generateTimeWindows() +
+
+            generateMaxStops()
+
+            ;
+        }
+
+        function getDay() {
+        }
+        function generateDate(loopCount) {
+
+            var depDay = parseInt(document.querySelector('input[name="depDay"]:checked').value, 10) + 1;
+            var retDay = parseInt(document.querySelector('input[name="retDay"]:checked').value, 10) + 1;
+            var toDay = new Date().getDay();
+
+            var depDate = new Date();
+            depDate.setDate(depDate.getDate() + (depDay - toDay + (loopCount * 7)));
+
+            var retDate = new Date();
+            retDate.setDate(retDate.getDate() + (retDay - toDay + (loopCount * 7)));
+
+            var depDay = depDate.getDate();
+            var retDay = retDate.getDate();
+            var depMonth = depDate.getMonth()+1; //January is 0!
+            var retMonth = retDate.getMonth()+1; //January is 0!
+            var depYear = depDate.getFullYear();
+            var retYear = retDate.getFullYear();
+
+            if (depDay < 10) {
+                depDay = '0' + depDay;
+            } 
+            if (retDay < 10) {
+                retDay = '0' + retDay;
+            } 
+
+            if (depMonth < 10) {
+                depMonth = '0' + depMonth;
+            } 
+            if (retMonth < 10) {
+                retMonth = '0' + retMonth;
+            } 
+
+            return '/' + depYear + '-' + depMonth + '-' + depDay + '/' + retYear + '-' + retMonth + '-' + retDay + '/';
+        }
+        function generateMaxStops() {
+            var stopsDep = parseInt(document.querySelector('input[name="depStops"]:checked').value, 10);
+            var stopsRet = parseInt(document.querySelector('input[name="retStops"]:checked').value, 10);
+
+            if (stopsDep == 2 || stopsRet == 2) {
+                return '';
+            } else if (stopsDep == -2 || stopsRet == -2) {
+                return ";stops=-2";
+            } else {
+                return ";stops=-0";
+            }
+        }
+        function generateTimeWindows() { 
+            var depMinTime = parseInt(document.getElementById('depMinTime').value, 10);
+            var depMinTimePM = parseInt(document.querySelector('input[name="depTimeEarlyAMPM"]:checked').value, 10);
+            var depMaxTime = parseInt(document.getElementById('depMaxTime').value, 10);
+            var depMaxTimePM = parseInt(document.querySelector('input[name="depTimeLateAMPM"]:checked').value, 10);
+            var retMinTime = parseInt(document.getElementById('retMinTime').value, 10);
+            var retMinTimePM = parseInt(document.querySelector('input[name="retTimeEarlyAMPM"]:checked').value, 10);
+            var retMaxTime = parseInt(document.getElementById('retMaxTime').value, 10);
+            var retMaxTimePM = parseInt(document.querySelector('input[name="retTimeLateAMPM"]:checked').value, 10);
+
+            return "&fs=takeoff=" + convertToXXXX(depMinTime, depMinTimePM, true) + "," + convertToXXXX(depMaxTime, depMaxTimePM, false) + "|" + convertToXXXX(retMinTime, retMinTimePM, true) + "," + convertToXXXX(retMaxTime, retMaxTimePM, false) + "@0000"
+        }
+        function convertToXXXX(time, PM, early) {
+            if (isNaN(time)) {
+                if (early) {
+                    return "0000";
+                } else {
+                    return "2359";
+                }
+            } else if (PM == 12) {
+                time += 12;
+            }
+            if (time < 10) {
+                time = "0" + time;
+            }
+            return time + "00";
+        }
+        </script>
       <br>
     </div>
   </form>
