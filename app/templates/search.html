@@ -15,6 +15,7 @@
       style="font-size:14pt;" 
       size="20" 
       autocomplete="nope"
+      value="LAX"
       />
       <br><br>
       Please enter your Arriving Airport:
@@ -25,6 +26,7 @@
       size="20"
       onClick="this.value='';"
       autocomplete="off"
+      value="JFK"
       />
       <script>
       var departing = new Awesomplete(document.getElementById("departingAirport"), {
@@ -91,7 +93,7 @@
         </li>
         <li class="segmented-control__item">
           <input class="segmented-control__input" type="radio" value="2" name="depStops" id="DEPtwoStops" >
-          <label class="segmented-control__label" for="DEPtwoStops">2+</label>
+          <label class="segmented-control__label" for="DEPtwoStops">2</label>
         </li>
       </ul>
       What's the earliest or latest you'd like your flight to take off? (Delete values to depart at anytime)
@@ -171,7 +173,7 @@
         </li>
         <li class="segmented-control__item">
           <input class="segmented-control__input" type="radio" value="2" name="retStops" id="RETtwoStops" >
-          <label class="segmented-control__label" for="RETtwoStops">2+</label>
+          <label class="segmented-control__label" for="RETtwoStops">2</label>
         </li>
       </ul>
       What's the earliest or latest you'd like your flight to take off? (Delete values to depart at anytime)
